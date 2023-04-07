@@ -7,7 +7,7 @@ const NavBar = () => {
         <Navbar expand="md" fixed="top">
         <Container>
             <Navbar.Brand>
-                <img src={logo} alt='Harmonize logo' height="60" width="80" />
+                <img src={logo} alt='Harmonize logo' height="60" width="60" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

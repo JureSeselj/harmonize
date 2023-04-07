@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Harmonize
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Goal for this Project
 
-## Available Scripts
+## User Experience - UX
 
-In the project directory, you can run:
+### User Stories
 
-### `npm start`
+### Navigation 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. As a user, I can see the home page with explanation of the portal, so that I know what the app is about
+2. As a user, I can see a navbar on every page, so that I can easily return to main page, find a post and access my profile page
+3. As a logged-out user, I can see log in and sign up options so that I can log in or sign up 
+4. As a user, I can search for posts with keywords so that I can find the posts I am interested in 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Authentication 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. As a new user, I can create a new account so that I can access the app 
+6. As a returning user, I can log in with my existing credentials so that I can access the app 
+7. As a user, I can maintain my logged-in status until I choose to log out so that my use of app is not compromised 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### User Profile Page 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8. As a user, I can add my profile avatar so that other users can easily identify me 
+9. As a user, I can view user's avatars so that I can easily identify other users of the app 
+10. As a user, I can update the picture and description of my profile on the profile page so that other users view up to date info about me 
+11. As a user, I can change password to my account so that I can keep my profile secure 
+12. As a user, I can delete my account if I decide to no longer use the app 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Other Users Profiles 
 
-### `npm run eject`
+13. As a user, I can view all the posts by a specific user so that I can see their latest activity 
+14. As a user, I can view other users’ profiles with their profile description, number of posts, followers and users followed so that I can learn more about them 
+15. As a user, I can follow and unfollow other users so that I can get specific users’ posts in my posts feed 
+16. As a user, I can see a list of the most followed profiles so that I can see which profiles are popular 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Posts 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+17. As a user, I can create posts so that I can share my images with the community 
+18. As a user, I can categories my post so that other users can find it by its tag 
+19. As a user, I can view other people’s posts so that I can get inspired by their images 
+20. As a user, I can view the details of a single post so that I can see its full description and other users’ comments 
+21. As user, I can like a specific post so that I can show my interest 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Main page 
 
-## Learn More
+22. As a user, I can view posts ordered by most recently added so that I am up to date with the newest content 
+23. As a user, I can keep scrolling through the posts so that they are loaded automatically and I don't have to select the next page 
+24. As a user, I can see the posts I liked so that I can find the posts I enjoy the most 
+25. As a user, I can view posts from users I followed, so I can follow their activity
+26. As a user, I can view posts category tags, so that I choose posts to display that I’m particularly interested in
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### The Post Page 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+27. As a user, I can view the details of a single posts so that I can read other users’ comments and know what they think about it
+28. As a user, I can view a category for the post so that I know what image is related to 
+29. As user, I can add comments to a post so that I can share my thoughts about the post with the community 
+30. As a user, I can see when the comments were created so that I know how old a comment is 
+31. As an owner of a comment, I can edit my comment so that I can update my existing comment 
+32. As an owner of a comment, I can delete my comment from the post 
+33. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created

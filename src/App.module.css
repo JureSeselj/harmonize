@@ -4,6 +4,7 @@
     --light-grey: #718085;
     --light: #d6dad9;
     --beige: #b1aca6;
+    --aquamarine: #40B0DF;
 }
   
 .App {
@@ -37,7 +38,7 @@ a:hover i {
 }
   
 i {
-    color: var(--light-grey);
+    color: var(--aquamarine);
     font-size: 1.5rem;
     padding: 6px;
     vertical-align: middle;

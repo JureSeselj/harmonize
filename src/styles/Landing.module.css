@@ -1,17 +1,21 @@
 .LandingImage {
-    width: 370px;
+    width: 420px;
     margin: 0 auto;
 }
   
-Button {
-    background-color: var(--aquamarine) !important;
+.LandingButton {
+    background-color: var(--aquamarine);
     box-shadow: 1px 1px 5px var(--aquamarine);
-    border-color: var(--aquamarine) !important;
+    border-color: var(--aquamarine);
+}
+
+.LandingButton:first-child {
+    margin-right: 15px;
 }
   
-Button:hover {
+.LandingButton:hover, .LandingButton:focus {
     background-color: var(--light) !important;
     color: var(--dark-slate-grey) !important;
-    box-shadow: 1px 1px 5px var(--light);
+    box-shadow: 1px 1px 5px var(--light) !important;
     border-color: var(--dark-slate-grey) !important;
 }

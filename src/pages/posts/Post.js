@@ -5,6 +5,8 @@ import { Badge, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
+import { DropdownMenu } from "../../components/DropdownMenu";
+
 
 const Post = (props) => {
   const {
@@ -69,7 +71,7 @@ const Post = (props) => {
 
           <div className={styles.UpdatedOn}>{updated_on}</div>
           <div className={styles.EditIcon}>
-            {is_owner && postPage && "Dropdown"}
+            {is_owner && postPage && <DropdownMenu />}
           </div>
       </Card.Body>
       <Link to={`/posts/${id}`}>

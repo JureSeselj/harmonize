@@ -44,18 +44,22 @@ const SignUpForm = () => {
           <h1 className="mb-4">Sign up</h1>
 
           <Form onSubmit={handleSubmit}>
-          {errors.username?.map((message, idx) => (
+            {errors.username?.map((message, idx) => (
               <Alert variant="warning" className={styles.Alert} key={idx}>
                 {message}
               </Alert>
             ))}
             <Form.Group controlId="username">
+              <Form.Text id="passwordHelpBlock" muted>
+                Your username must be 1-10 characters long.
+              </Form.Text>
               <Form.Label className="d-none">Username</Form.Label>
               <Form.Control
                 className={styles.Input}
                 type="text"
                 placeholder="Your username"
                 name="username"
+                maxlength="10"
                 value={username}
                 onChange={handleChange}
               />
@@ -109,7 +113,7 @@ const SignUpForm = () => {
             </Button>
             
             <Link className={styles.Link} to="/login">
-            Already a member? Click <span>here </span>to log in.
+              Already a member? Click <span>here </span>to log in.
             </Link>
           </Form>
         </Container>

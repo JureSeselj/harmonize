@@ -50,3 +50,21 @@ i {
     padding: 6px;
     vertical-align: middle;
 }
+
+.button {
+    background-color: var(--aquamarine);
+    box-shadow: 1px 1px 5px var(--aquamarine);
+    border-color: var(--aquamarine);
+    font-weight: bold;
+}
+
+.button:first-child {
+    margin-right: 15px;
+}
+  
+.button:hover, .button:focus {
+    background-color: var(--light) !important;
+    color: var(--dark-slate-grey) !important;
+    box-shadow: 1px 1px 5px var(--light) !important;
+    border-color: var(--dark-slate-grey) !important;
+}

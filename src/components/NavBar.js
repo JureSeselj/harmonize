@@ -68,33 +68,35 @@ const NavBar = () => {
   );
 
     return (
-        <Navbar className={styles.NavBar} expand="md" fixed="top">
+      <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
             <Container>
                 <NavLink to="/">
                     <Navbar.Brand>
-                        <img src={logo} alt='Harmonize logo' height="60" width="60" />
+                      <img src={logo} alt='Harmonize logo' height="60" width="60" />
                     </Navbar.Brand>
                 </NavLink>
                 <Navbar.Toggle
-                    className={styles.NavbarToggle}
-                    aria-controls="basic-navbar-nav"
+                  onClick={() => setExpanded(!expanded)}
+                  ref={ref}
+                  className={styles.NavbarToggle}
+                  aria-controls="basic-navbar-nav"
                 />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto text-right">
                         <NavLink 
-                            exact 
-                            className={styles.NavLink} 
-                            activeClassName={styles.Active} 
-                            to="/"
+                          exact 
+                          className={styles.NavLink} 
+                          activeClassName={styles.Active} 
+                          to="/"
                         >
-                            <i className="fa-solid fa-house"></i>Home
+                          <i className="fa-solid fa-house"></i>Home
                         </NavLink>
                         
                         {currentUser ? loggedInNavBar : loggedOutNavBar}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+      </Navbar>
   );
 };
 

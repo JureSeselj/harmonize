@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Badge, Col, Container, Form, Row } from "react-bootstrap";
 import styles from "../../styles/MainPostsPage.module.css";
 import appStyles from "../../App.module.css";
 import Post from "./Post";
@@ -11,24 +11,29 @@ import { axiosReq } from "../../api/axiosDefaults";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
 
 function MainPostsPage({ message, filter = "" }) {
   const [posts, setPosts] = useState({ results: [] });
+  const [category, setCategory] = useState(null);
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
-
+  const currentUser = useCurrentUser();
   const [query, setQuery] = useState("");
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const { data } = await axiosReq.get(`/posts/?${filter}search=${query}`);
+        const { data } = await axiosReq.get(
+            `/posts/?${filter}search=${query}${
+                category !== null ? `&category=${category}` : ""
+            }`
+        );
         setPosts(data);
         setHasLoaded(true);
-      } catch (err) {
-        console.log(err);
-      }
-    };
+    } catch (err) {
+    }
+  };
 
     setHasLoaded(false);
     const timer = setTimeout(() => {
@@ -38,7 +43,7 @@ function MainPostsPage({ message, filter = "" }) {
     return () => {
       clearTimeout(timer);
     };
-  }, [filter, query, pathname]);
+  }, [filter, query, pathname, currentUser, category]);
 
   return (
     <Container>
@@ -55,7 +60,27 @@ function MainPostsPage({ message, filter = "" }) {
           <Container
             className={`${appStyles.Content} ${appStyles.CollapsedColumn} mb-2`}
           >
-            Post category
+            <p className=" font-weight-bold ml-2">Post categories</p>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory(null)}>All</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("quotes")}>Quotes</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("animals")}>Animals</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("lifestyle")}>Lifestyle</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("fun fact")}>Fun fact</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("creative")}>Creative</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("nature")}>Nature</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("arts & entertainment")}>Arts & Entertainment</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("books")}>Books</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("design & fashion")}>Design & Fashion</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("education")}>Education</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("food & beverage")}>Food & Beverage</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("health/beauty")}>Health/Beauty</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("sport")}>Sport</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("clothing (brand)")}>Clothing (Brand)</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("automotive")}>Automotive</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("games/toys")}>Games/Toys</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("musician/band")}>Musician/Band</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("movie")}>Movie</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("other")}>Other</Badge>
           </Container>
         </Col>
 

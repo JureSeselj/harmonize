@@ -52,7 +52,7 @@ function MainPostsPage({ message, filter = "" }) {
           <LikeFeedAddPost />
 
           <Container
-            className={`${appStyles.Content} ${appStyles.CollapsedColumn} mb-2`}
+            className={`${appStyles.Content} ${appStyles.CollapsedColumn} ${appStyles.CategoriesColumn} mb-2`}
           >
             <PopularProfiles />
           </Container>

@@ -16,3 +16,20 @@
     background: var(--aquamarine);
     margin: 25px 0;
 }
+
+.CommentsButton {
+    background-color: var(--aquamarine);
+    box-shadow: 1px 1px 5px var(--aquamarine);
+    border-radius: 35px;
+    border-color: var(--aquamarine);
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 3px 15px;
+}
+  
+.CommentsButton:hover, .CommentsButton:focus {
+    background-color: var(--light) !important;
+    color: var(--dark-slate-grey) !important;
+    box-shadow: 1px 1px 5px var(--light) !important;
+    border-color: var(--dark-slate-grey) !important;
+}

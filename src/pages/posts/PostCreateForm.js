@@ -130,15 +130,17 @@ function PostCreateForm() {
       </Form.Group>
 
       <Button 
-        className={`my-3 ${appStyles.button}`} 
+        className={`my-3 ${appStyles.button}`}
+        onMouseDown={(e) => e.preventDefault()} 
         type="submit"
       >
         Create
       </Button>
 
       <Button 
-        className={`${appStyles.button} mx-3`} 
-        onClick={() => {}}
+        className={`${appStyles.button} mx-3`}
+        onMouseDown={(e) => e.preventDefault()} 
+        onClick={() => history.goBack()}
       >
         Cancel
       </Button>

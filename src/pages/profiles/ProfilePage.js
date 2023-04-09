@@ -24,7 +24,7 @@ function ProfilePage() {
   const [profilePosts, setProfilePosts] = useState({ results: [] }); 
   const currentUser = useCurrentUser();
   const { id } = useParams();
-  const setProfileData = useSetProfileData(); // update the page profile data
+  const { setProfileData, handleFollow, handleUnfollow } = useSetProfileData();
   const { pageProfile } = useProfileData();
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner; // check if the logged-in user is the profile's owner
@@ -85,7 +85,7 @@ function ProfilePage() {
             (profile?.following_id ? (
               <Button
                 className={`${buttonsStyles.Button} ${buttonsStyles.ButtonUnfollow}`}
-                onClick={() => {}}
+                onClick={() => handleUnfollow(profile)}
               >
                 unfollow
               </Button>

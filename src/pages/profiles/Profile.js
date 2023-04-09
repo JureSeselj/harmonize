@@ -14,10 +14,12 @@ const Profile = (props) => {
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
 
-  const { handleFollow } = useSetProfileData();
+  const { handleFollow, handleUnfollow } = useSetProfileData();
 
   return (
-    <div className={`my-3 d-flex align-items-center ${styles.ProfilesDisplaySmall}`}>
+    <div
+      className={`my-3 d-flex align-items-center ${styles.ProfilesDisplaySmall}`}
+    >
       <div>
         <Link to={`/profiles/${id}`}>
           <Avatar src={image} height={imageSize} />
@@ -33,17 +35,22 @@ const Profile = (props) => {
         {currentUser &&
           !is_owner &&
           (following_id ? (
-            <Button className={`${buttonsStyles.Button} ${buttonsStyles.ButtonFollow}`} onClick={() => handleFollow(profile)}>
-              follow
+            <Button
+              className={`${buttonsStyles.Button} ${buttonsStyles.ButtonUnfollow}`}
+              onClick={() => handleUnfollow(profile)}
+            >
+              unfollow
             </Button>
           ) : (
-            <Button className={`${buttonsStyles.Button} ${buttonsStyles.ButtonUnfollow}`} onClick={() => {}}>
-              unfollow
+            <Button
+              className={`${buttonsStyles.Button} ${buttonsStyles.ButtonFollow}`}
+              onClick={() => handleFollow(profile)}
+            >
+              follow
             </Button>
           ))}
       </div>
     </div>
   );
 };
-
 export default Profile;

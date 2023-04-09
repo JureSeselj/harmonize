@@ -7,6 +7,12 @@
   display: block !important;
   margin: 5px 0;
 }
+
+.SplitColumns {
+  display: table-cell;
+  border-collapse: separate;
+  border-spacing: 7px;
+}
   
 @media all and (min-width: 991px) {
     .LikeFeedAddDisplay {
@@ -20,10 +26,6 @@
   .CollapsedColumn {
     display: table-cell;
     width: 31%;
-  }
-  /* Display of categories badges */
-  .CategoriesColumn {
-    display: table-cell;
   }
 }
 

@@ -122,7 +122,7 @@ const Post = (props) => {
 
           {likes_number}
           <Link to={`/posts/${id}`}>
-            <i class="fa-regular fa-comment ml-2" />
+            <i className="fa-regular fa-comment ml-2" />
           </Link>
           {comments_number}
         </div>

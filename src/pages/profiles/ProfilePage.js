@@ -20,14 +20,14 @@ import { fetchMoreData } from "../../utils/utils";
 import NoResultsImage from "../../assets/no-results-found.png";
 
 function ProfilePage() {
-  const [hasLoaded, setHasLoaded] = useState(false); 
+  const [hasLoaded, setHasLoaded] = useState(false);
+  const [profilePosts, setProfilePosts] = useState({ results: [] }); 
   const currentUser = useCurrentUser();
   const { id } = useParams();
   const setProfileData = useSetProfileData(); // update the page profile data
   const { pageProfile } = useProfileData();
   const [profile] = pageProfile.results;
   const is_owner = currentUser?.username === profile?.owner; // check if the logged-in user is the profile's owner
-  const [profilePosts, setProfilePosts] = useState({ results: [] });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -92,7 +92,7 @@ function ProfilePage() {
             ) : (
               <Button
                 className={`${buttonsStyles.Button} ${buttonsStyles.ButtonFollow}`}
-                onClick={() => {}}
+                onClick={() => handleFollow(profile)}
               >
                 follow
               </Button>

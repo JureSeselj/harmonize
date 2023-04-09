@@ -5,6 +5,7 @@ import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { Button } from "react-bootstrap";
+import { useSetProfileData } from "../../contexts/ProfileDataContext";
 
 const Profile = (props) => {
   const { profile, imageSize = 40 } = props;
@@ -12,6 +13,8 @@ const Profile = (props) => {
 
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
+
+  const { handleFollow } = useSetProfileData();
 
   return (
     <div className={`my-3 d-flex align-items-center ${styles.ProfilesDisplaySmall}`}>
@@ -30,7 +33,7 @@ const Profile = (props) => {
         {currentUser &&
           !is_owner &&
           (following_id ? (
-            <Button className={`${buttonsStyles.Button} ${buttonsStyles.ButtonFollow}`} onClick={() => {}}>
+            <Button className={`${buttonsStyles.Button} ${buttonsStyles.ButtonFollow}`} onClick={() => handleFollow(profile)}>
               follow
             </Button>
           ) : (

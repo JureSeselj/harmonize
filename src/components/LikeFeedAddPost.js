@@ -8,7 +8,7 @@ import styles from "../styles/SmallMenuContainer.module.css";
 const LikeFeedAddPost = () => {
   return (
     <Container
-      className={`${appStyles.Content} ${appStyles.CollapsedColumn} mb-2 ${styles.LikeFeedAddDisplay}`}
+      className={`${appStyles.Content} ${styles.CollapsedColumn} mb-2 ${styles.LikeFeedAddDisplay}`}
           >
       <Link to="/posts/create"><i class="fa-regular fa-plus fa-fw"></i><p className={styles.Link}>Add post</p></Link>
       <Link to="/liked"><i class="fa-regular fa-heart fa-fw"></i><p className={styles.Link}>Liked posts</p></Link>

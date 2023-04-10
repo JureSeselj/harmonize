@@ -6,10 +6,10 @@ import { Badge, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
+import Like from "../../assets/like.png";
+import Unlike from "../../assets/unlike.png";
 import { DropdownMenu } from "../../components/DropdownMenu";
 import FeedbackMsg from "../../components/FeedbackMsg";
-
-
 const Post = (props) => {
   const {
     id,
@@ -27,26 +27,37 @@ const Post = (props) => {
     postPage,
     setPosts,
   } = props;
-
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
   const [showAlert, setShowAlert] = useState(false);
-
+  /*
+    Handles editing of the post
+  */
   const handleEdit = () => {
     history.push(`/posts/${id}/edit`);
   };
-
+  /*
+    Handles deleting of the post
+    Shows the confirmation message to the user
+    Redirects the user to the main page after a short delay
+  */
   const handleDelete = async () => {
     try {
       await axiosRes.delete(`/posts/${id}/`);
       setShowAlert(true);
-      setTimeout(function(){history.push("/");}, 1500);
+      setTimeout(function () {
+        history.push("/");
+      }, 1500);
     } catch (err) {
-      //console.log(err);
+      // console.log(err);
     }
   };
-
+  /*
+    Handles liking of the post by the user
+    Sends a request to the API for a post with a specific id
+    Increments the likes number by 1
+  */
   const handleLike = async () => {
     try {
       const { data } = await axiosRes.post("/likes/", { post: id });
@@ -59,10 +70,14 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      //console.log(err);
+      // console.log(err);
     }
   };
-
+  /*
+    Handles unliking of the post already liked by the user
+    Sends a request to the API for a post with a specific id
+    Decrements the likes number by 1
+  */
   const handleUnlike = async () => {
     try {
       await axiosRes.delete(`/likes/${like_id}/`);
@@ -75,67 +90,99 @@ const Post = (props) => {
         }),
       }));
     } catch (err) {
-      //console.log(err);
+      // console.log(err);
     }
   };
-
   return (
     <Card className={styles.Post}>
-      {showAlert &&
+      {showAlert && (
         <FeedbackMsg variant="info" message="Your post has been deleted" />
-      }
+      )}
       <Card.Body className={styles.Container}>
-          <Link to={`/profiles/${profile_id}`}>
-          <Avatar src={profile_image} height={50} className={styles.AvatarGrid} />
-          </Link>
-          <Link to={`/profiles/${profile_id}`} className={styles.Username}>{owner}</Link>
-
-          <div className={styles.UpdatedOn}>{updated_on}</div>
-          <div className={styles.EditIcon}>
-            {is_owner && postPage && <DropdownMenu handleEdit={handleEdit} handleDelete={handleDelete} />}
-          </div>
+        <Link to={`/profiles/${profile_id}`}>
+          <Avatar
+            src={profile_image}
+            height={50}
+            className={styles.AvatarGrid}
+          />
+        </Link>
+        <Link to={`/profiles/${profile_id}`} className={styles.Username}>
+          {owner}
+        </Link>
+        <div className={styles.UpdatedOn}>{updated_on}</div>
+        {/* Display the edit dropdown menu for owner of the post and if the
+        postPage prop exists */}
+        <div className={styles.EditIcon}>
+          {is_owner && postPage && (
+            <DropdownMenu handleEdit={handleEdit} handleDelete={handleDelete} />
+          )}
+        </div>
       </Card.Body>
       <Link to={`/posts/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
-      <Card.Body>
-        {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {description && <Card.Text>{description}</Card.Text>}
-        {category && <Card.Text>Type: 
-            <Badge variant="secondary" className={styles.BadgePost}> {category}</Badge>
-        </Card.Text>}
-        <hr className={appStyles.Line} />
-        <div>
-          {is_owner ? (
-            <OverlayTrigger
-              placement="top"
-              overlay={<Tooltip>This is your post, you can't like it ;-) </Tooltip>}
-            >
-              <i className="far fa-heart" />
-            </OverlayTrigger>
-          ) : like_id ? (
-            <span onClick={handleUnlike}>
-              <i className="fas fa-heart" />
-            </span>
-          ) : currentUser ? (
-            <span onClick={handleLike}>
-              <i className="far fa-heart" />
-            </span>
-          ) : (
-            <OverlayTrigger>
-              <i className="far fa-heart" />
-            </OverlayTrigger>
-          )}
 
-          {likes_number}
+      <Card.Body>
+        <Card.Title className="text-center">{title}</Card.Title>
+        {description && <Card.Text>{description}</Card.Text>}
+        <Card.Text>
+          Type:
+          <Badge variant="secondary" className={styles.BadgePost}>
+            {category}
+          </Badge>
+        </Card.Text>
+        <hr className={appStyles.Line} />
+
+        <div>
+          {
+            is_owner ? (
+              // users cannot like their own posts
+              <OverlayTrigger
+                placement="top"
+                overlay={
+                  <Tooltip>This is your post, you cannot like it ;-) </Tooltip>
+                }
+              >
+                <img
+                  src={Unlike}
+                  className={appStyles.LikeIcon}
+                  alt="Like hand"
+                  height="35"
+                  width="35"
+                />
+              </OverlayTrigger>
+            ) : like_id ? (
+              // check if the user has already liked the post
+              <span onClick={handleUnlike}>
+                <img
+                  src={Like}
+                  className={appStyles.LikeIcon}
+                  alt="Like hand"
+                  height="35"
+                  width="35"
+                />
+              </span>
+            ) : currentUser ? (
+              // ability to like the post
+              <span onClick={handleLike}>
+                <img
+                  src={Unlike}
+                  className={appStyles.LikeIcon}
+                  alt="Unlike hand"
+                  height="35"
+                  width="35"
+                />
+              </span>
+            ) : null // user must be logged in to the app to view the content
+          }
+          <span className="ml-1">{likes_number}</span>
           <Link to={`/posts/${id}`}>
             <i className="fa-regular fa-comment ml-2" />
           </Link>
-          {comments_number}
+          <span className="ml-1">{comments_number}</span>
         </div>
       </Card.Body>
     </Card>
   );
 };
-
 export default Post;

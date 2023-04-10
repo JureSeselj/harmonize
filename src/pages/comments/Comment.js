@@ -7,7 +7,7 @@ import { DropdownMenu } from "../../components/DropdownMenu";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { axiosRes } from "../../api/axiosDefaults";
 import CommentEditForm from "./CommentEditForm";
-import Alert from "../../components/Alert";
+import FeedbackMsg from "../../components/FeedbackMsg";
 
 const Comment = (props) => {
   const {
@@ -49,7 +49,7 @@ const Comment = (props) => {
     <div>
 
       {showAlert &&
-        <Alert variant="info" message="Comment has been updated" />
+        <FeedbackMsg variant="info" message="Comment has been updated" />
       }
 
       <Media>

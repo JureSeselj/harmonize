@@ -17,7 +17,7 @@ const Landing = () => {
                     <h1 className="mb-4">Harmonize - Get started</h1>
                 </Card.Title>
                 <Card.Text className="font-weight-bold">
-                Harmonize is Photo Sharing Platform. If you’re looking for an
+                Harmonize is a Photo Sharing Platform. If you’re looking for an
                 inspiration for your next photo, you’re in the right place.
                 <br />
                 <br />

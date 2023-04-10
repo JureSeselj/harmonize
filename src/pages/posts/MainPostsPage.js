@@ -75,25 +75,25 @@ function MainPostsPage({ message, filter = "" }) {
           >
             <p className=" font-weight-bold ml-2">Post categories</p>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory(null)}>All</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("quotes")}>Quotes</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("animals")}>Animals</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("lifestyle")}>Lifestyle</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("fun fact")}>Fun fact</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("creative")}>Creative</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("nature")}>Nature</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("arts & entertainment")}>Arts & Entertainment</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("books")}>Books</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("design & fashion")}>Design & Fashion</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("education")}>Education</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("food & beverage")}>Food & Beverage</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("health/beauty")}>Health/Beauty</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("sport")}>Sport</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("clothing (brand)")}>Clothing (Brand)</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("automotive")}>Automotive</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("games/toys")}>Games/Toys</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("musician/band")}>Musician/Band</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("movie")}>Movie</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("other")}>Other</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Quotes")}>Quotes</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Animals")}>Animals</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Lifestyle")}>Lifestyle</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Fun Fact")}>Fun fact</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Creative")}>Creative</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Nature")}>Nature</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Arts & Entertainment")}>Arts & Entertainment</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Books")}>Books</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Design & Fashion")}>Design & Fashion</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Education")}>Education</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Food & Beverage")}>Food & Beverage</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Health/Beauty")}>Health/Beauty</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Sport")}>Sport</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Clothing (Brand)")}>Clothing (Brand)</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Automotive")}>Automotive</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Games/Toys")}>Games/Toys</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Musician/Band")}>Musician/Band</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Movie")}>Movie</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Other")}>Other</Badge>
           </Container>
         </Col>
 

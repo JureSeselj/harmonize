@@ -119,25 +119,25 @@ function PostEditForm() {
           onChange={handleChange}
         >
           <option>Select type of category</option>
-          <option value="quotes">Quotes</option>
-          <option value="animals">Animals</option>
-          <option value="lifestyle">Lifestyle</option>
-          <option value="fun fact">Fun fact</option>
-          <option value="creative">Creative</option>
-          <option value="nature">Nature</option>
-          <option value="arts & entertainment">Arts & Entertainment</option>
-          <option value="books">Books</option>
-          <option value="design & fashion">Design & Fashion</option>
-          <option value="education">Education</option>
-          <option value="food & beverage">Food & Beverage</option> 
-          <option value="health/beauty">Health/Beauty</option>
-          <option value="sport">Sport</option> 
-          <option value="clothing (brand)">Clothing (Brand)</option>
-          <option value="automotive">Automotive</option>
-          <option value="games/toys">Games/Toys</option>
-          <option value="musician/band">Musician/Band</option>
-          <option value="movie">Movie</option>
-          <option value="other">Other</option>
+          <option value="Quotes">Quotes</option>
+          <option value="Animals">Animals</option>
+          <option value="Lifestyle">Lifestyle</option>
+          <option value="Fun Fact">Fun fact</option>
+          <option value="Creative">Creative</option>
+          <option value="Nature">Nature</option>
+          <option value="Arts & Entertainment">Arts & Entertainment</option>
+          <option value="Books">Books</option>
+          <option value="Design & Fashion">Design & Fashion</option>
+          <option value="Education">Education</option>
+          <option value="Food & Beverage">Food & Beverage</option> 
+          <option value="Health/Beauty">Health/Beauty</option>
+          <option value="Sport">Sport</option> 
+          <option value="Clothing (Brand)">Clothing (Brand)</option>
+          <option value="Automotive">Automotive</option>
+          <option value="Games/Toys">Games/Toys</option>
+          <option value="Musician/Band">Musician/Band</option>
+          <option value="Movie">Movie</option>
+          <option value="Other">Other</option>
         </Form.Control>
     </Form.Group>
 

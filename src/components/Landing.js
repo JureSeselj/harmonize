@@ -32,7 +32,9 @@ const Landing = () => {
               />
             <Card.Body>
               <NavLink to="/signup">
-                <Button className={`${appStyles.button} mb-3`}> Happy to join!</Button>
+              <Button className={`${appStyles.button} ${styles.LandingButtonMargin} mb-3`}>
+                 Happy to join!
+              </Button>
               </NavLink>
               <NavLink to="/login">
                 <Button className={`${appStyles.button} mb-3`}>

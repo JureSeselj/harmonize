@@ -20,7 +20,9 @@ The key functionality aspects:
 
 ### User Stories
 
-### Navigation 
+### First sprint
+
+#### Navigation 
 
 1. As a user, I can see the home page with explanation of the portal, so that I know what the app is about
 2. As a user, I can see a navbar on every page, so that I can easily return to main page, find a post and access my profile page
@@ -86,7 +88,14 @@ The key functionality aspects:
 
 #### Colours
 
+![Colours Palete]()
+
+* The colour scheme for this application was the aim to keep the colours neutral and warm to create a calming feeling and gather user's focus on the photographs without distraction by other graphics on the website. 
+
 #### Typography
+
+* Google Fonts were implemented on the website. Prompt with sans-serif as fallback was used thoughout the site to ensure high legibility of the content.
+Prompt features a tall x-height to aid in readability of mixed-case and lower-case text.
 
 #### Imagery
 

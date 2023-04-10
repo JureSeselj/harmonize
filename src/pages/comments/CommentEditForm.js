@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
+import Alert from "../../components/Alert";
 
 function CommentEditForm(props) {
-  const { id, content, setShowEditForm, setComments } = props;
+  const { id, content, setShowEditForm, setComments, setShowAlert } = props;
   const [formContent, setFormContent] = useState(content);
 
   const handleChange = (e) => {
@@ -25,11 +26,14 @@ function CommentEditForm(props) {
                 ...comment,
                 content: formContent.trim(),
                 updated_on: "now",
+
               }
             : comment;
         }),
       }));
       setShowEditForm(false);
+      setShowAlert(true);
+
     } catch (err) {
     }
   };
@@ -57,7 +61,7 @@ function CommentEditForm(props) {
       </Button>
       <Button
           className={styles.CommentsButton}
-          onClick={() => setShowEditForm(false)}
+          onClick={() => { setShowEditForm(false); setShowAlert(false);}}
           onMouseDown={(e) => e.preventDefault()}
           type="button"
         >

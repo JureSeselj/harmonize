@@ -7,6 +7,7 @@ import appStyles from "../App.module.css";
 
 const Landing = () => {
     return (
+    <>
         <Row className="text-center">
           <Col sm={12}>
           <Container>
@@ -40,9 +41,36 @@ const Landing = () => {
               </NavLink>
             </Card.Body>
           </Card>
-          </Container>
-        </Col>
-      </Row>
+        </Container>
+      </Col>
+    </Row>
+    <Container>
+      <footer className={styles.footer}>
+        <div className="float-left">
+          <p>Created by Jure Seselj</p>
+        </div>
+
+        <div className="float-right pb-3">
+          <a
+            href="https://github.com/JureSeselj/harmonize"
+            aria-label="Check the website GitHub page"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jure-seselj-062654192/"
+            aria-label="Visit me on LinkedIn (opens in new tab)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin" />
+          </a>
+        </div>
+      </footer>
+    </Container>
+    </>
   );
 };
 

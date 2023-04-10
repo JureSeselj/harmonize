@@ -150,7 +150,7 @@ function PostCreateForm() {
   return (
     <Form onSubmit={handleSubmit}>
       <Row>
-        <Col md={7} lg={8} className="d-none d-md-block p-0 p-md-2">
+        <Col className="pt-2 pb-4 p-0 p-md-2" md={5} lg={4}>
           <Container className={appStyles.Content}>{textFields}</Container>
         </Col>
         <Col className="pt-2 p-0 p-md-2" md={5} lg={4}>

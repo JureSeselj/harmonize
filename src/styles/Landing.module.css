@@ -3,19 +3,8 @@
     margin: 0 auto;
 }
   
-.LandingButton {
-    background-color: var(--aquamarine);
-    box-shadow: 1px 1px 5px var(--aquamarine);
-    border-color: var(--aquamarine);
-}
-
-.LandingButton:first-child {
-    margin-right: 15px;
-}
-  
-.LandingButton:hover, .LandingButton:focus {
-    background-color: var(--light) !important;
-    color: var(--dark-slate-grey) !important;
-    box-shadow: 1px 1px 5px var(--light) !important;
-    border-color: var(--dark-slate-grey) !important;
+@media all and (max-width: 440px) {
+    .LandingImage {
+      width: 80%;
+    }
 }

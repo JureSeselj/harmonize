@@ -62,3 +62,20 @@
 31. As an owner of a comment, I can edit my comment so that I can update my existing comment 
 32. As an owner of a comment, I can delete my comment from the post 
 33. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created
+
+## Design
+
+#### Colours
+
+#### Typography
+
+#### Imagery
+
+* All the imagery is related to the website:
+
+- 404 picture were taken from [here](https://pixabay.com/illustrations/error-404-web-developers-error-site-6052476/)
+- No results found picture taken from [here](https://pngtree.com/freepng/no-result-search-icon_6511543.html)
+- Image on comments page were taken from [here](https://www.freepik.com/free-vector/illustration-speech-bubble_2606145.htm#query=chat&position=17&from_view=search)
+- The lading page image comes from [here](https://depositphotos.com/home.html)
+- Site logo was created with [favicon.io](https://favicon.io/favicon-generator/)
+- Upload image icon taken from [here](https://pngtree.com/freepng/image-upload-icon-photo-upload-icon_5279795.html)

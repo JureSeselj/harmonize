@@ -138,7 +138,7 @@ function ProfilePage() {
   return (
     <Container>
       <Row>
-          <Col className="pt-2 pb-p-0 g-0" lg={4}>
+          <Col className={`${columnStyles.SplitColumns} py-2 p-0 p-lg-2`} lg={4}>
             <LikeFeedAddPost />
 
           <Container

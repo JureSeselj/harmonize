@@ -3,7 +3,10 @@ import { Navbar, NavDropdown, Container, Nav } from "react-bootstrap";
 import logo from "../assets/Harmonize-logo.png";
 import styles from "../styles/NavBar.module.css";
 import { NavLink } from "react-router-dom";
-import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContext";
+import { 
+  useCurrentUser, 
+  useSetCurrentUser 
+} from "../contexts/CurrentUserContext";
 import Avatar from "./Avatar";
 import axios from "axios";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
@@ -13,19 +16,26 @@ const NavBar = () => {
   const currentUser = useCurrentUser();
   const setCurrentUser = useSetCurrentUser();
 
-  const {expanded, setExpanded, ref} = useClickOutsideToggle();
+  const { expanded, setExpanded, ref } = useClickOutsideToggle();
 
+  /*
+    Handles user logout
+    Removes saved current user
+    Redirects to the landing page in <NavLink>
+  */
   const handleLogOut = async () => {
     try {
       await axios.post("dj-rest-auth/logout/");
       setCurrentUser(null);
-      setExpanded(false)
+      setExpanded(false);
       removeTokenTimestamp();
-    } catch (err) {
-    }
+    } catch (err) {}
   }
 
-  // Variable to display current username in the navbar
+  /* 
+    Displays current username with its avatar in the navbar
+    With a dropdown option to view user profile or log-out on click
+  */
   const loggedInNavBar = (
     <>
       <NavDropdown
@@ -53,7 +63,10 @@ const NavBar = () => {
     </>
   );
 
-  // Navbar visible to users not logged-in
+  /* 
+    Navbar visble to user not logged-in
+    With options to create a new account or log in to an existing one
+  */
   const loggedOutNavBar = (
     <>
       <NavLink
@@ -74,7 +87,11 @@ const NavBar = () => {
   );
 
     return (
-      <Navbar expanded={expanded} className={styles.NavBar} expand="md" fixed="top">
+      <Navbar 
+        expanded={expanded} 
+        className={styles.NavBar} 
+        expand="md" fixed="top"
+      >
             <Container>
                 <NavLink to="/">
                     <Navbar.Brand>

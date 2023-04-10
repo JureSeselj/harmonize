@@ -31,8 +31,9 @@ function LogInForm() {
   };
 
   /* 
-    Handle submitted in the form data on logging in. Redirect to home page.
-*/
+    Handles submitted in the form data on logging in
+    Redirect user to home page
+  */
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -51,6 +52,7 @@ function LogInForm() {
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className="mb-4">Log in</h1>
 
+          {/* Login form with alert messages for any errors in input fields */}
           <Form onSubmit={handleSubmit}>
           {errors.username?.map((message, idx) => (
               <Alert variant="warning" className={appStyles.Alert} key={idx}>

@@ -20,15 +20,19 @@ const SignUpForm = () => {
 
   const history = useHistory();
 
+  /* 
+    Handles changes to any of the input fields
+  */
   const handleChange = (e) => {
     setSignUpData({
       ...signUpData,
-      [e.target.name]: e.target.value, //key is an input field name, value is the value entered by the user
+      [e.target.name]: e.target.value, // key is an input field name, value is the value entered by the user
     });
   };
 
   /* 
-    Handle submitted in the form data on signing up. Redirect to log in page.
+    Handles submitted in the form data on signing up
+    Redirects user to login page
   */
     const handleSubmit = async (e) => {
       e.preventDefault(); // prevent page refresh
@@ -46,6 +50,7 @@ const SignUpForm = () => {
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className="mb-4">Sign up</h1>
 
+          {/* Sign up form with alert messages for any errors in input fields */}
           <Form onSubmit={handleSubmit}>
             {errors.username?.map((message, idx) => (
               <Alert variant="warning" className={appStyles.Alert} key={idx}>

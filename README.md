@@ -110,6 +110,13 @@ Prompt features a tall x-height to aid in readability of mixed-case and lower-ca
 
 ### Wireframes
 
+* Wireframes for this project can be located below:
 <details><summary>Big screens - laptop & desktop</summary>
 <img src="docs/wireframes/wireframes-harmonize-desktop.jpg">
+</details>
+<details><summary>Medium screens - tablet</summary>
+<img src="">
+</details>
+<details><summary>Small screens - mobile</summary>
+<img src="docs/wireframes/wireframes-harmonize-mobile.jpg">
 </details>

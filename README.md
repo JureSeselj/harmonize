@@ -107,3 +107,9 @@ Prompt features a tall x-height to aid in readability of mixed-case and lower-ca
 - The lading page image comes from [here](https://depositphotos.com/home.html)
 - Site logo was created with [favicon.io](https://favicon.io/favicon-generator/)
 - Upload image icon taken from [here](https://pngtree.com/freepng/image-upload-icon-photo-upload-icon_5279795.html)
+
+### Wireframes
+
+<details><summary>Big screens - laptop & desktop</summary>
+<img src="docs/wireframes/wireframes-harmonize-desktop.jpg">
+</details>

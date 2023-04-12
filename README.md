@@ -115,7 +115,7 @@ Prompt features a tall x-height to aid in readability of mixed-case and lower-ca
 <img src="docs/wireframes/wireframes-harmonize-desktop.jpg">
 </details>
 <details><summary>Medium screens - tablet</summary>
-<img src="">
+<img src="docs/wireframes/wireframes-harmonize-tablet.jpg">
 </details>
 <details><summary>Small screens - mobile</summary>
 <img src="docs/wireframes/wireframes-harmonize-mobile.jpg">

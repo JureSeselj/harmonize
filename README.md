@@ -88,7 +88,7 @@ The key functionality aspects:
 
 #### Colours
 
-![Colours Palete]()
+![Colours Palete](./docs/readme/colour-palettes-harmonize.png)
 
 * The colour scheme for this application was the aim to keep the colours neutral and warm to create a calming feeling and gather user's focus on the photographs without distraction by other graphics on the website. 
 

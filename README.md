@@ -1,3 +1,4 @@
+![Logo](./src/assets/Harmonize-logo.png)
 # Harmonize
 
 # Goal for this Project

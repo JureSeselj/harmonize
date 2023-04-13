@@ -8,6 +8,7 @@ import Avatar from "../../components/Avatar";
 import { axiosRes } from "../../api/axiosDefaults";
 import { DropdownMenu } from "../../components/DropdownMenu";
 import FeedbackMsg from "../../components/FeedbackMsg";
+
 const Post = (props) => {
   const {
     id,
@@ -25,16 +26,19 @@ const Post = (props) => {
     postPage,
     setPosts,
   } = props;
+
   const currentUser = useCurrentUser();
   const is_owner = currentUser?.username === owner;
   const history = useHistory();
   const [showAlert, setShowAlert] = useState(false);
+
   /*
     Handles editing of the post
   */
   const handleEdit = () => {
     history.push(`/posts/${id}/edit`);
   };
+
   /*
     Handles deleting of the post
     Shows the confirmation message to the user
@@ -51,6 +55,7 @@ const Post = (props) => {
       // console.log(err);
     }
   };
+
   /*
     Handles liking of the post by the user
     Sends a request to the API for a post with a specific id
@@ -71,6 +76,7 @@ const Post = (props) => {
       // console.log(err);
     }
   };
+
   /*
     Handles unliking of the post already liked by the user
     Sends a request to the API for a post with a specific id
@@ -91,6 +97,7 @@ const Post = (props) => {
       // console.log(err);
     }
   };
+
   return (
     <Card className={styles.Post}>
       {showAlert && (
@@ -108,6 +115,7 @@ const Post = (props) => {
           {owner}
         </Link>
         <div className={styles.UpdatedOn}>{updated_on}</div>
+
         {/* Display the edit dropdown menu for owner of the post and if the
         postPage prop exists */}
         <div className={styles.EditIcon}>
@@ -116,6 +124,7 @@ const Post = (props) => {
           )}
         </div>
       </Card.Body>
+
       <Link to={`/posts/${id}`}>
         <Card.Img src={image} alt={title} />
       </Link>
@@ -174,7 +183,8 @@ const Post = (props) => {
             ) : null // user must be logged in to the app to view the content
           }
           <span className="ml-1">{likes_number}</span>
-          <Link to={`/posts/${id}`}>
+
+          <Link to={`/posts/${id}`} aria-label="view comments">
             <i className="fa-regular fa-comment ml-2" />
           </Link>
           <span className="ml-1">{comments_number}</span>
@@ -183,4 +193,5 @@ const Post = (props) => {
     </Card>
   );
 };
+
 export default Post;

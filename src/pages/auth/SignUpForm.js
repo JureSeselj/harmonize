@@ -15,9 +15,7 @@ const SignUpForm = () => {
     password2: "",
   });
   const { username, password1, password2 } = signUpData;
-
   const [errors, setErrors] = useState({});
-
   const history = useHistory();
 
   /* 
@@ -34,15 +32,15 @@ const SignUpForm = () => {
     Handles submitted in the form data on signing up
     Redirects user to login page
   */
-    const handleSubmit = async (e) => {
-      e.preventDefault(); // prevent page refresh
-      try {
-        await axios.post("/dj-rest-auth/registration/", signUpData);
-        history.push("/login");
-      } catch (err) {
-        setErrors(err.response?.data);
-      }
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // prevent page refresh
+    try {
+      await axios.post("/dj-rest-auth/registration/", signUpData);
+      history.push("/login");
+    } catch (err) {
+      setErrors(err.response?.data);
+    }
+  };
 
   return (
     <Row className="text-center">
@@ -57,6 +55,7 @@ const SignUpForm = () => {
                 {message}
               </Alert>
             ))}
+
             <Form.Group controlId="username">
               <Form.Text id="passwordHelpBlock" muted>
                 Your username must be 1-10 characters long.
@@ -67,7 +66,7 @@ const SignUpForm = () => {
                 type="text"
                 placeholder="Your username"
                 name="username"
-                maxlength={10}
+                maxLength={10}
                 value={username}
                 onChange={handleChange}
               />
@@ -78,6 +77,7 @@ const SignUpForm = () => {
                 {message}
               </Alert>
             ))}
+
             <Form.Group controlId="password1">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
@@ -95,6 +95,7 @@ const SignUpForm = () => {
                 {message}
               </Alert>
             ))}
+
             <Form.Group controlId="password2">
               <Form.Label className="d-none">Confirm password</Form.Label>
               <Form.Control
@@ -106,7 +107,7 @@ const SignUpForm = () => {
                 onChange={handleChange}
               />
             </Form.Group>
-            
+
             {errors.non_field_errors?.map((message, idx) => (
               <Alert variant="warning" className={appStyles.Alert} key={idx}>
                 {message}
@@ -122,7 +123,7 @@ const SignUpForm = () => {
             >
               Sign up!
             </Button>
-            
+
             <Link className={styles.Link} to="/login">
               Already a member? Click <span>here </span>to log in.
             </Link>

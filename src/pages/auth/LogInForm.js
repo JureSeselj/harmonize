@@ -18,9 +18,7 @@ function LogInForm() {
   });
 
   const { username, password } = logInData;
-
   const [errors, setErrors] = useState({});
-
   const history = useHistory();
 
   /* 
@@ -57,11 +55,12 @@ function LogInForm() {
 
           {/* Login form with alert messages for any errors in input fields */}
           <Form onSubmit={handleSubmit}>
-          {errors.username?.map((message, idx) => (
+            {errors.username?.map((message, idx) => (
               <Alert variant="warning" className={appStyles.Alert} key={idx}>
                 {message}
               </Alert>
             ))}
+
             <Form.Group controlId="username">
               <Form.Label className="d-none">Username</Form.Label>
               <Form.Control
@@ -69,7 +68,7 @@ function LogInForm() {
                 type="text"
                 placeholder="Your username"
                 name="username"
-                maxlength={10}
+                maxLength={10}
                 value={username}
                 onChange={handleChange}
               />
@@ -80,6 +79,7 @@ function LogInForm() {
                 {message}
               </Alert>
             ))}
+
             <Form.Group controlId="password">
               <Form.Label className="d-none">Password</Form.Label>
               <Form.Control
@@ -97,6 +97,7 @@ function LogInForm() {
                 {message}
               </Alert>
             ))}
+
             <Button
               className={`my-3 ${appStyles.button}`}
               type="submit"
@@ -106,7 +107,7 @@ function LogInForm() {
             </Button>
 
             <Link className={styles.Link} to="/signup">
-              Don't have an account? Click <span>here </span>to sign up.
+              Don&lsquo;t have an account? Click <span>here </span>to sign up.
             </Link>
           </Form>
         </Container>

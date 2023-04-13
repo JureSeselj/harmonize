@@ -1,12 +1,19 @@
 import React, { useRef, useState } from "react";
-import { Alert, Button, Col, Container, Form, Image, Row } from "react-bootstrap";
+import {
+  Alert,
+  Button,
+  Col,
+  Container,
+  Form,
+  Image,
+  Row,
+} from "react-bootstrap";
 import Upload from "../../assets/upload-image.png";
 import styles from "../../styles/PostCreateEditForm.module.css";
 import appStyles from "../../App.module.css";
 import Asset from "../../components/Asset";
 import { useHistory } from "react-router-dom";
 import { axiosReq } from "../../api/axiosDefaults";
-
 
 function PostCreateForm() {
   const [errors, setErrors] = useState({});
@@ -19,10 +26,12 @@ function PostCreateForm() {
   });
 
   const { title, category, description, image } = postData;
-
   const imageInput = useRef(null);
   const history = useHistory();
 
+  /* 
+    Handles changes to the create form input fields
+  */
   const handleChange = (e) => {
     setPostData({
       ...postData,
@@ -30,7 +39,9 @@ function PostCreateForm() {
     });
   };
 
-  // Handle changes to the file input field
+  /* 
+    Handles change to the file (image) input field
+  */
   const handleChangeImage = (e) => {
     if (e.target.files.length) {
       URL.revokeObjectURL(image); // for changing image after adding one
@@ -41,7 +52,10 @@ function PostCreateForm() {
     }
   };
 
-  // Handle the form submission
+  /* 
+    Handles the create post form submission
+    Refreshes the user's access token before making a request to create a post
+  */
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData();
@@ -55,44 +69,52 @@ function PostCreateForm() {
       const { data } = await axiosReq.post("/posts/", formData);
       history.push(`/posts/${data.id}`);
     } catch (err) {
-      //console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
     }
   };
-  
+
+  /*
+    Hold input fields and buttons to create and cancel
+  */
   const textFields = (
     <div className="text-center">
       <Form.Group>
         <Form.Label>Title</Form.Label>
+
         {errors.title?.map((message, idx) => (
-              <Alert variant="warning" className={appStyles.Alert} key={idx}>
-                {message}
-              </Alert>
-            ))}
-        <Form.Control 
+          <Alert variant="warning" className={appStyles.Alert} key={idx}>
+            {message}
+          </Alert>
+        ))}
+
+        <Form.Control
           type="text"
           name="title"
           className={appStyles.Input}
           value={title}
           onChange={handleChange}
+          aria-label="title"
         />
       </Form.Group>
 
       <Form.Group>
         <Form.Label>Category</Form.Label>
+
         {errors.category?.map((message, idx) => (
-              <Alert variant="warning" className={appStyles.Alert} key={idx}>
-                {message}
-              </Alert>
-            ))}
+          <Alert variant="warning" className={appStyles.Alert} key={idx}>
+            {message}
+          </Alert>
+        ))}
+
         <Form.Control
           as="select"
           name="category"
           className={appStyles.Input}
           value={category}
           onChange={handleChange}
+          aria-label="category"
         >
           <option>Select type of category</option>
           <option value="Quotes">Quotes</option>
@@ -126,20 +148,21 @@ function PostCreateForm() {
           className={appStyles.Input}
           value={description}
           onChange={handleChange}
+          aria-label="post description"
         />
       </Form.Group>
 
-      <Button 
+      <Button
         className={`my-3 ${appStyles.button}`}
-        onMouseDown={(e) => e.preventDefault()} 
+        onMouseDown={(e) => e.preventDefault()}
         type="submit"
       >
         Create
       </Button>
 
-      <Button 
+      <Button
         className={`${appStyles.button} mx-3`}
-        onMouseDown={(e) => e.preventDefault()} 
+        onMouseDown={(e) => e.preventDefault()}
         onClick={() => history.goBack()}
       >
         Cancel
@@ -150,15 +173,15 @@ function PostCreateForm() {
   return (
     <Form onSubmit={handleSubmit}>
       <Row>
-        <Col className="pt-2 pb-4 p-0 p-md-2" md={5} lg={4}>
+        <Col md={7} lg={8} className="d-none d-md-block p-0 p-md-2">
           <Container className={appStyles.Content}>{textFields}</Container>
         </Col>
-        <Col className="pt-2 p-0 p-md-2" md={5} lg={4}>
+        <Col className="pt-2 pb-4 p-0 p-md-2" md={5} lg={4}>
           <Container
             className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}
           >
             <Form.Group className="text-center">
-            {image ? (
+              {image ? (
                 <>
                   <figure>
                     <Image className={appStyles.Image} src={image} alt="your uploaded image" rounded />
@@ -174,7 +197,7 @@ function PostCreateForm() {
                 </>
               ) : (
                 <Form.Label
-                  className="d-flex justify-content-center"
+                  className={`${styles.UploadPicture} d-flex justify-content-center`}
                   htmlFor="image-upload"
                 >
                   <Asset
@@ -192,11 +215,13 @@ function PostCreateForm() {
                 ref={imageInput}
               />
             </Form.Group>
+
             {errors.image?.map((message, idx) => (
               <Alert variant="warning" className={appStyles.Alert} key={idx}>
                 {message}
-                </Alert>
+              </Alert>
             ))}
+
             <div className="d-md-none">{textFields}</div>
           </Container>
         </Col>

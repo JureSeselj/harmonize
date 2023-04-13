@@ -34,7 +34,7 @@ export const DropdownMenu = ({ handleEdit, handleDelete }) => {
             aria-label="edit"
           >
             <i className="fa-solid fa-pen"></i>
-            </Dropdown.Item>
+          </Dropdown.Item>
         </OverlayTrigger>
 
         <OverlayTrigger placement="top" overlay={<Tooltip>Delete</Tooltip>}>
@@ -83,7 +83,7 @@ export function ProfileEditDropdown({ id }) {
           placement="top"
           overlay={<Tooltip>Change password</Tooltip>}
         >
-        <Dropdown.Item
+          <Dropdown.Item
             className={styles.DropdownItem}
             onClick={() => history.push(`/profiles/${id}/edit/password`)}
             aria-label="change-password"

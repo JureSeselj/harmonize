@@ -5,6 +5,9 @@ import landingImage from "../assets/landing-page.jpg";
 import styles from "../styles/Landing.module.css";
 import appStyles from "../App.module.css";
 
+/*
+  Landing page with app description and links to social media in footer
+*/
 const Landing = () => {
     return (
     <>

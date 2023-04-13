@@ -16,7 +16,18 @@ The key functionality aspects:
 - Posts filtering by liked posts and followed users posts
 - Responsiveness to allow users use the app on various devices
 
+[Live Project Here]()
 
+# Table of Contents
+- [Harmonize - Introduction](#harmonize)
+    - [Goal for this Project](#goal-for-this-project)
+    - [User Experience - UX](#user-experience---ux)
+        - [User Stories](#user-stories)
+    - [Design](#design)
+        - [Colours](#colours)
+        - [Typography](#typography)
+        - [Imagery](#imagery)
+        - [Wireframes](#wireframes)
 ## User Experience - UX
 
 ### User Stories

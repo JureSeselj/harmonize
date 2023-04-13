@@ -32,18 +32,18 @@ function MainPostsPage({ message, filter = "" }) {
   */
   useEffect(() => {
     const fetchPosts = async () => {
-      try {
-        const { data } = await axiosReq.get(
-            `/posts/?${filter}search=${query}${
-                category !== null ? `&category=${category}` : ""
-            }`
-        );
-        setPosts(data);
-        setHasLoaded(true);
-    } catch (err) {
-    }
-  };
-
+        try {
+            const { data } = await axiosReq.get(
+                `/posts/?${filter}search=${query}${
+                    category !== null ? `&category=${category}` : ""
+                }`
+            );
+            setPosts(data);
+            setHasLoaded(true);
+        } catch (err) {
+          // console.log(err)
+        }
+    };
     setHasLoaded(false);
     /*
       Delays making an API request and fetching posts of 1 second
@@ -62,7 +62,7 @@ function MainPostsPage({ message, filter = "" }) {
     <Container>
       <Row>
         <Col className={`${columnStyles.SplitColumns} pt-2 p-0 p-lg-2`} lg={4}>
-          <LikeFeedAddPost />
+            <LikeFeedAddPost />
 
           <Container
             className={`${appStyles.Content} ${columnStyles.CollapsedColumn} mb-2`}
@@ -99,17 +99,20 @@ function MainPostsPage({ message, filter = "" }) {
 
         <Col className="py-2 p-0 p-lg-2" lg={8}>
 
+        {/* Posts text search bar */}
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
           onSubmit={(e) => e.preventDefault()}
         >
+          
           <Form.Control
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             type="text"
             className="mr-sm-2"
             placeholder="Search posts"
+            aria-label="search bar"
           />
           <i className={`fa-solid fa-eraser ${styles.Clear}`} onClick={() => setQuery("")} />
         </Form>
@@ -117,27 +120,30 @@ function MainPostsPage({ message, filter = "" }) {
         {hasLoaded ? (
           <>
             {posts.results.length ? (
+              // InfiniteScroll component handles loading more pages of posts as the user scrolls
               <InfiniteScroll
-              children={posts.results.map((post) => (
-                <Post 
+                children={posts.results.map((post) => (
+                  <Post 
                     key={post.id} 
                     {...post} 
                     setPosts={setPosts} 
                     // truncate post description on the main page to 500 characters
-                    description={post.description.length > 500 ? (post.description.slice(0, 500) + ' .....') : post.description} />
-              ))}
-              dataLength={posts.results.length}
-              loader={<Asset spinner />}
-              hasMore={!!posts.next}
-              next={() => fetchMoreData(posts, setPosts)}
-            />
+                    description={post.description.length > 500 ? (post.description.slice(0, 500) + " .....") : post.description} />
+                ))}
+                dataLength={posts.results.length}
+                loader={<Asset spinner />}
+                hasMore={!!posts.next}
+                next={() => fetchMoreData(posts, setPosts)}
+              />
             ) : (
+              // if no results found, show no results asset with a relevant message
               <Container className={appStyles.Content}>
                 <Asset src={NoResultsImage} width={20} height={20} message={message} />
               </Container>
             )}
           </>
         ) : (
+          // display a loading spinner if the posts haven't been loaded yet
           <Container className={appStyles.Content}>
             <Asset spinner />
           </Container>

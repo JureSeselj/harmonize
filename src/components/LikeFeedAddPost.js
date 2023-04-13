@@ -4,7 +4,10 @@ import { Container } from "react-bootstrap";
 import appStyles from "../App.module.css";
 import styles from "../styles/SmallMenuContainer.module.css";
 
-
+/*
+  Small menu with links to create a post, 
+  see liked post and posts by other users the user is following
+*/
 const LikeFeedAddPost = () => {
   return (
     <Container

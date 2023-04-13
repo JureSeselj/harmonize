@@ -12,7 +12,6 @@ export const useSetCurrentUser = () => useContext(SetCurrentUserContext);
 
 export const CurrentUserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
-
   const history = useHistory();
 
   /*
@@ -21,10 +20,10 @@ export const CurrentUserProvider = ({ children }) => {
   */
   const handleMount = async () => {
     try {
-      const { data } = await axiosRes.get("/dj-rest-auth/user/");
+      const { data } = await axiosRes.get("dj-rest-auth/user/");
       setCurrentUser(data);
     } catch (err) {
-      //console.log(err);
+      // console.log(err);
     }
   };
 
@@ -33,7 +32,7 @@ export const CurrentUserProvider = ({ children }) => {
   }, []);
 
   /* 
-    Handle access tokens
+    Handles access tokens
     Redirects user to log-in page if refreshing of token fails
   */
   useMemo(() => {
@@ -65,7 +64,7 @@ export const CurrentUserProvider = ({ children }) => {
       async (err) => {
         if (err.response?.status === 401) {
           try {
-            await axios.post("/dj-rest-auth/token/refresh");
+            await axios.post("/dj-rest-auth/token/refresh/");
           } catch (err) {
             setCurrentUser((prevCurrentUser) => {
               if (prevCurrentUser) {

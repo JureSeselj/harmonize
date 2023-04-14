@@ -17,8 +17,10 @@
     margin: 25px 0;
 }
 
+/* Add, update & cancel comment buttons */
 .CommentsButton {
     background-color: var(--aquamarine);
+    color: var(--dark-slate-grey);
     box-shadow: 1px 1px 5px var(--aquamarine);
     border-radius: 35px;
     border-color: var(--aquamarine);
@@ -27,7 +29,8 @@
     padding: 3px 15px;
 }
   
-.CommentsButton:hover, .CommentsButton:focus {
+.CommentsButton:hover, 
+.CommentsButton:focus {
     background-color: var(--light) !important;
     color: var(--dark-slate-grey) !important;
     box-shadow: 1px 1px 5px var(--light) !important;

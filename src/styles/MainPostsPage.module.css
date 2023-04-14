@@ -1,3 +1,4 @@
+/* Styling of the search bar for user input */
 .SearchBar input {
     border-radius: 15px;
     color: var(--dark-slate-grey);
@@ -31,12 +32,18 @@
     top: 10px;
     right: 12px;
 }
-  
+
+/* Styling of badges with cuisine type */
 .Badge {
     font-size: 1rem;
     margin: 0 0 10px 5px;
 }
 
+.Badge:hover {
+    cursor: pointer;
+}
+
+/* Reduce the font size of badges on smaller screens */
 @media all and (max-width: 991px) {
     .Badge {
       font-size: 0.9rem;

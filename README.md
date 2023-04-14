@@ -1,4 +1,5 @@
-# Harmonize <img src="src/assets/Harmonize-logo.png" style="width: 85px; height:60px;>
+![Logo](./src/assets/Harmonize-logo.png)
+# Harmonize
 
 # Goal for this Project
 

@@ -22,12 +22,18 @@ The key functionality aspects:
 - [Harmonize - Introduction](#harmonize)
     - [Goal for this Project](#goal-for-this-project)
     - [User Experience - UX](#user-experience---ux)
-        - [User Stories](#user-stories)
+      - [User Stories](#user-stories)
     - [Design](#design)
-        - [Colours](#colours)
-        - [Typography](#typography)
-        - [Imagery](#imagery)
-        - [Wireframes](#wireframes)
+      - [Colours](#colours)
+      - [Typography](#typography)
+      - [Imagery](#imagery)
+      - [Wireframes](#wireframes)
+    - [Technologies Used](#technologies-used)
+      - [Languages](#languages)
+      - [Libraries, frameworks and dependencies](#libraries-frameworks-and-dependencies)
+      - [Tools & Programs](#tools--programs)
+    - [Front-End](#front-end)
+    - [Back-End API](#back-end-api)
 ## User Experience - UX
 
 ### User Stories

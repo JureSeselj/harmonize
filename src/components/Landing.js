@@ -17,14 +17,14 @@ const Landing = () => {
           <Card>
             <Card.Body>
                 <Card.Title>
-                    <h1 className="mb-4">Harmonize - Get started</h1>
+                    <h1 className="mb-4">Harmonize</h1>
                 </Card.Title>
                 <Card.Text className="font-weight-bold">
                 Harmonize is a Photo Sharing Platform. If you’re looking for an
                 inspiration for your next photo, you’re in the right place.
                 <br />
                 <br />
-                Join our community, find ideas and become an inspiration for
+                Join the harmony revolution, Harmonize your social life and become an inspiration for
                 someone else!
               </Card.Text>
             </Card.Body>

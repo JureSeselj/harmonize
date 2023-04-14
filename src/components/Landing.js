@@ -52,7 +52,7 @@ const Landing = () => {
     <Container>
       <footer className={styles.footer}>
         <div className="float-left">
-          <p>Created by Jure Seselj</p>
+          <p>Designed by Jure Seselj</p>
         </div>
 
         <div className="float-right pb-3">

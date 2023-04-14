@@ -6,6 +6,7 @@
     --aquamarine: #40B0DF;
 }
 
+/* Highlighting of text */
 ::selection {
     background-color: rgba(64, 176, 223, 0.4);
 }
@@ -35,7 +36,8 @@ h3 {
     border-radius: 3px;
     border: 1px solid #fff;
 }
-  
+
+/* Style app links */
 a {
     color: var(--dark-slate-grey) !important;
     font-weight: bold;
@@ -48,7 +50,8 @@ a:hover {
 a:hover i {
     color: var(--dark-slate-grey);
 }
-  
+
+/* Style app icons */
 i {
     color: var(--aquamarine);
     font-size: 1.5rem;
@@ -61,21 +64,25 @@ i {
     box-shadow: 1px 1px 5px var(--aquamarine);
     border-color: var(--aquamarine);
     font-weight: bold;
+    color: var(--dark-slate-grey);
 }
 
-.button:hover, .button:focus {
+.button:hover, 
+.button:focus {
     background-color: var(--light) !important;
     color: var(--dark-slate-grey) !important;
     box-shadow: 1px 1px 5px var(--light) !important;
     border-color: var(--dark-slate-grey) !important;
 }
 
+/* Add style to bootstrap alerts */
 .Alert {
     margin-bottom: 0;
     padding: 0;
     font-weight: bold;
 }
-  
+
+/* Forms input field */
 .Input {
     background: #fff;
     border: 1px solid var(--light);
@@ -97,6 +104,12 @@ i {
     max-height: 40vh;
     max-width: 100%;
     object-fit: contain;
+}
+
+/* Like thumb-up icon style on hover */
+.LikeIcon:hover {
+    transform: rotate(-15deg) scale(1.1);
+    cursor: pointer;
 }
 
 .Line {

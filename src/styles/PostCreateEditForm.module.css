@@ -1,8 +1,12 @@
 .Container {
     min-height: 300px;
 }
-
+  
 .ButtonChangeImage {
-    color: #fff;
+    color: var(--dark-slate-grey);
     padding: 7px;
+}
+  
+.UploadPicture:hover {
+    cursor: pointer;
 }

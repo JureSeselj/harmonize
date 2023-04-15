@@ -350,3 +350,11 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="">
 </details>
+
+### Password change form
+- Allows user to change their profile password
+- Contains password criteria visible on hover/tap of ‘view password criteria’ button
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

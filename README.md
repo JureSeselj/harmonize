@@ -255,3 +255,11 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Footer
+- A footer is displayed at the bottom of the landing page
+- Contains copyrights info
+- Contains links to LinkedIn social media and GitHub pages (opening in a separate window)
+<details><summary>See feature screenshot</summary>
+<img src="docs/features/feature-footer.png">
+</details>

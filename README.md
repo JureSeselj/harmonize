@@ -306,3 +306,20 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="">
 </details>
+
+### Post page
+- Contains details of a single post - image, title, description (if provided by the user) and its category tag
+- Contains number of likes and comments the post has
+- Contains like icon to allow user to like the post
+- Features comments section below the post
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>
+
+### Comments
+- Enable users to share their opinion on a specific post
+- Display passed time since adding the post (e.g. 4 minutes ago)
+- Users have an option to update or delete the comment
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

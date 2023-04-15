@@ -250,8 +250,8 @@ The API for this Front-End application was built with the Django REST Framework.
   - Logged-in users will see the Home icon and their user avatar & name with option on click to either view their profile or log out
 - The nav bar is fully responsive and changes to a toggler (hamburger menu) on smaller size screens
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-navbar-1.png">
+<img src="docs/features/feature-navbar-2.png">
 <img src="">
 <img src="">
 </details>

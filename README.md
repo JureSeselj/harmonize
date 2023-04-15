@@ -235,6 +235,7 @@ There were various components created and reused across this application.
 
 The API for this Front-End application was built with the Django REST Framework. The repository with a README file for the DRF Back-End can be found [here](https://github.com/JureSeselj/harmonize-drf-api)
 
+[Back to Top](#table-of-contents)
 ## Features
 
 ### Landing page
@@ -427,6 +428,7 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 </details>
 
+[Back to Top](#table-of-contents)
 ## Future features / improvements
 
 Example of potential improvements to this project:

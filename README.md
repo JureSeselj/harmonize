@@ -274,8 +274,8 @@ The API for this Front-End application was built with the Django REST Framework.
 - User cannot register the same details twice for an account
 - Once registered, the user is redirected to the login page to log in
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-signup-1.png">
+<img src="docs/features/feature-signup-2.png">
 </details>
 
 ### Login form

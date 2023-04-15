@@ -393,3 +393,11 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Category badges
+- Allow to tag the post by the type of the photo
+- Allow other users to find content they are most interested in
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

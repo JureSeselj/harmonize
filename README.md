@@ -374,3 +374,13 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="">
 </details>
+
+### ‘Add, liked, feed’ menu
+- Allow user to create a post
+- Featured on every page (except for the create/update post/profile or change password)
+- Allow user to view only posts they liked
+- Allow user to view only posts created by users they follow
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

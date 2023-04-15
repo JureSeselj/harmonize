@@ -284,3 +284,12 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshot</summary>
 <img src="">
 </details>
+
+### Post create/update form
+- Contains image, title, category and description
+- Description field is optional
+- Allows user to share their pictures with others
+- Allows user to categorise their post to make it easy to be found by other users
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

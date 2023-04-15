@@ -411,3 +411,16 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### 404 error page
+- Displays if the user enters a URL that does not exist
+- Contains a button to redirect user to the main page 
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>
+
+### Feedback messages
+- User is provided with feedback message about the action their performed such as edited/deleted comment, updated profile or password, deleted a post
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

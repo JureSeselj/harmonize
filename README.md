@@ -274,3 +274,13 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Login form
+- Returning users can login to their account
+- The user must have an account in the system and they must enter the correct username and password
+- Both fields are mandatory
+- Once logged in the user will be navigated to the main posts page
+- Warning message is displayed on incorrect input
+<details><summary>See feature screenshot</summary>
+<img src="">
+</details>

@@ -333,3 +333,20 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Profile page
+- Contains information about the user
+- Displays info how many posts and followers user has and how many users they are following
+- Displays profile information if it was provided by the profile owner
+- Contains a dropdown menu to edit the profile and change profile password
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>
+
+### Profile avatar
+- Allow users to change their default avatar to their own avatar or picture
+- Displayed in the navbar, at top of the post, within profile page and by user comment
+- Displayed within ’Top Users’ menu
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

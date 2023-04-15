@@ -242,3 +242,16 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshot</summary>
 <img src="docs/features/feature-landing-page.png">
 </details>
+
+### Navigation Bar and Logo
+- Featured and consistent on the all pages
+- Two variants of the navbar:
+  - New or not logged-in users will see the Home, Sign up & Log in icons - options to either register or log in
+  - Logged-in users will see the Home icon and their user avatar & name with option on click to either view their profile or log out
+- The nav bar is fully responsive and changes to a toggler (hamburger menu) on smaller size screens
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>

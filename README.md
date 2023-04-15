@@ -34,6 +34,8 @@ The key functionality aspects:
       - [Tools & Programs](#tools--programs)
     - [Front-End](#front-end)
     - [Back-End API](#back-end-api)
+    - [Features](#features)
+    - [Future features / improvements](#future-features--improvements)
 ## User Experience - UX
 
 ### User Stories

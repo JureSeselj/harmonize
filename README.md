@@ -232,3 +232,13 @@ There were various components created and reused across this application.
 ### Django REST Framework
 
 The API for this Front-End application was built with the Django REST Framework. The repository with a README file for the DRF Back-End can be found [here](https://github.com/JureSeselj/harmonize-drf-api)
+
+## Features
+
+### Landing page
+- Includes navbar, main body and a footer
+- Lading page main body includes explanation what the app is about
+- Contains direct links to sign-up and log-in pages
+<details><summary>See feature screenshot</summary>
+<img src="docs/features/feature-landing-page.png">
+</details>

@@ -263,3 +263,14 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshot</summary>
 <img src="docs/features/feature-footer.png">
 </details>
+
+### Sign up form
+- New users can create an account
+- The user must provide a valid username (between 1-10 characters long), password and password confirmation
+- Password must meet certain criteria which user can see on hovering/taping the ‘view password criteria’ button
+- User cannot register the same details twice for an account
+- Once registered, the user is redirected to the login page to log in
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

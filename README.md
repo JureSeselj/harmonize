@@ -401,3 +401,13 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Search bar
+- By typing a phrase in the search bar users can find a specific post or a user they are looking for
+- Allows to search through all post title, users or post category
+- Allows search through liked posts only or posts by users followed
+- User can click on the eraser icon to clear the search content instead of hitting the backspace button
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

@@ -358,3 +358,13 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Infinite scroll
+- Allows user to scroll through the content without having to select the next/previous page
+- Used for the posts and comments
+- Improves general user experience and user engagement
+- Displays the loading spinner before loading
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

@@ -323,3 +323,13 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="">
 </details>
+
+### Likes
+- Allow user to express their interest in the post
+- Like icons is marked green if user likes the post
+- User cannot like their own posts
+- Allow user to narrow their search to liked posts only when clicked on the ‘Feed’ option in the small menu
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

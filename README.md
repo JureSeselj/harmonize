@@ -384,3 +384,12 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Top Users menu
+- Displays three most followed users in the app
+- Contains follow buttons next to username which allow following these users
+- Featured on the majority of pages (except for edit post/profile or change password)
+<details><summary>See feature screenshots</summary>
+<img src="">
+<img src="">
+</details>

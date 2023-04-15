@@ -285,7 +285,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Once logged in the user will be navigated to the main posts page
 - Warning message is displayed on incorrect input
 <details><summary>See feature screenshot</summary>
-<img src="">
+<img src="docs/features/feature-login.png">
 </details>
 
 ### Post create/update form

@@ -293,3 +293,16 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="">
 </details>
+
+### Main posts page
+- Main posts page is displayed for logged-in users instead of the landing page
+- Contains 3 small menus:
+  - Add, likes & feed
+  - Top Users
+  - Post category badges
+- Contain search bar above all posts
+- Without any applied search filter displays posts added by all users
+- Display all posts ordered by the most recent one
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

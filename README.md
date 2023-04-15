@@ -368,3 +368,9 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="">
 <img src="">
 </details>
+
+### Follow/unfollow
+- Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed
+<details><summary>See feature screenshots</summary>
+<img src="">
+</details>

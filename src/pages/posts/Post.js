@@ -141,47 +141,29 @@ const Post = (props) => {
         <hr className={appStyles.Line} />
 
         <div>
-          {
-            is_owner ? (
-              // users cannot like their own posts
-              <OverlayTrigger
-                placement="top"
-                overlay={
-                  <Tooltip>This is your post, you cannot like it ;-) </Tooltip>
-                }
-              >
-                <img
-                  src={Unlike}
-                  className={appStyles.LikeIcon}
-                  alt="Like hand"
-                  height="35"
-                  width="35"
-                />
-              </OverlayTrigger>
-            ) : like_id ? (
-              // check if the user has already liked the post
-              <span onClick={handleUnlike}>
-                <img
-                  src={Like}
-                  className={appStyles.LikeIcon}
-                  alt="Like hand"
-                  height="35"
-                  width="35"
-                />
-              </span>
-            ) : currentUser ? (
-              // ability to like the post
-              <span onClick={handleLike}>
-                <img
-                  src={Unlike}
-                  className={appStyles.LikeIcon}
-                  alt="Unlike hand"
-                  height="35"
-                  width="35"
-                />
-              </span>
-            ) : null // user must be logged in to the app to view the content
-          }
+        {is_owner ? (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>You can't like your own post!</Tooltip>}
+            >
+              <i className="far fa-heart" />
+            </OverlayTrigger>
+          ) : like_id ? (
+            <span onClick={handleUnlike}>
+              <i className={`fas fa-heart ${styles.Heart}`} />
+            </span>
+          ) : currentUser ? (
+            <span onClick={handleLike}>
+              <i className={`far fa-heart ${styles.HeartOutline}`} />
+            </span>
+          ) : (
+            <OverlayTrigger
+              placement="top"
+              overlay={<Tooltip>Log in to like posts!</Tooltip>}
+            >
+              <i className="far fa-heart" />
+            </OverlayTrigger>
+          )}
           <span className="ml-1">{likes_number}</span>
 
           <Link to={`/posts/${id}`} aria-label="view comments">

@@ -54,7 +54,7 @@ a:hover i {
 /* Style app icons */
 i {
     color: var(--aquamarine);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 6px;
     vertical-align: middle;
 }
@@ -64,15 +64,15 @@ i {
     box-shadow: 1px 1px 5px var(--aquamarine);
     border-color: var(--aquamarine);
     font-weight: bold;
-    color: var(--dark-slate-grey);
+    color: #fff;
 }
 
 .button:hover, 
 .button:focus {
-    background-color: var(--light) !important;
-    color: var(--dark-slate-grey) !important;
-    box-shadow: 1px 1px 5px var(--light) !important;
-    border-color: var(--dark-slate-grey) !important;
+    background-color: #fff !important;
+    color: var(--light-grey) !important;
+    box-shadow: 1px 1px 5px var(--aquamarine) !important;
+    border-color: var(--aquamarine) !important;
 }
 
 /* Add style to bootstrap alerts */
@@ -106,7 +106,7 @@ i {
     object-fit: contain;
 }
 
-/* Like thumb-up icon style on hover */
+/* Like icon style on hover */
 .LikeIcon:hover {
     transform: rotate(-15deg) scale(1.1);
     cursor: pointer;

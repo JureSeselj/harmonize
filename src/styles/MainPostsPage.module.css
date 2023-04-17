@@ -33,9 +33,10 @@
     right: 12px;
 }
 
-/* Styling of badges with cuisine type */
+/* Styling of badges with category */
 .Badge {
-    font-size: 1rem;
+    background-color: var(--light-grey);
+    font-size: 0.9rem;
     margin: 0 0 10px 5px;
 }
 

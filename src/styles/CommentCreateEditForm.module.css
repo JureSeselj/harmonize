@@ -2,9 +2,9 @@
     color: var(--dark-slate-grey);
     padding-left: 20px;
     margin-bottom: 10px;
-    border-radius: 35px;
-    border-top-left-radius: 35px !important;
-    border-bottom-left-radius: 35px !important;
+    border-radius: 15px;
+    border-top-left-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
 }
   
 .Form:focus {
@@ -19,10 +19,10 @@
 
 /* Add, update & cancel comment buttons */
 .CommentsButton {
-    background-color: var(--aquamarine);
-    color: var(--dark-slate-grey);
+    background-color: #fff;
+    color: var(--light-grey);
     box-shadow: 1px 1px 5px var(--aquamarine);
-    border-radius: 35px;
+    border-radius: 15px;
     border-color: var(--aquamarine);
     font-weight: bold;
     margin-right: 10px;
@@ -31,8 +31,8 @@
   
 .CommentsButton:hover, 
 .CommentsButton:focus {
-    background-color: var(--light) !important;
-    color: var(--dark-slate-grey) !important;
-    box-shadow: 1px 1px 5px var(--light) !important;
-    border-color: var(--dark-slate-grey) !important;
+    background-color: var(--aquamarine) !important;
+    color: #fff !important;
+    box-shadow: 1px 1px 5px var(--aquamarine) !important;
+    border-color: var(--aquamarine) !important;
 }

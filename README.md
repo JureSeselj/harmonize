@@ -153,7 +153,7 @@ Prompt features a tall x-height to aid in readability of mixed-case and lower-ca
 - HTML
 - CSS
 - Javascript
-  - React (18.2.0)
+  - React (17.0.2)
 
 ### Libraries, frameworks and dependencies
 
@@ -255,8 +255,8 @@ The API for this Front-End application was built with the Django REST Framework.
 <details><summary>See feature screenshots</summary>
 <img src="docs/features/feature-navbar-1.png">
 <img src="docs/features/feature-navbar-2.png">
-<img src="">
-<img src="">
+<img src="docs/features/feature-navbar-3.png">
+<img src="docs/features/feature-navbar-4.png">
 </details>
 
 ### Footer

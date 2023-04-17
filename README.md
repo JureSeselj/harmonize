@@ -294,7 +294,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Allows user to share their pictures with others
 - Allows user to categorise their post to make it easy to be found by other users
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-post-create-edit-form.png">
 </details>
 
 ### Main posts page

@@ -35,7 +35,10 @@
 
 /* Styling of badges with category */
 .Badge {
-    background-color: var(--light-grey);
+    background-color: #fff;
+    color: var(--light-grey);
+    border-color: var(--aquamarine);
+    box-shadow: 1px 1px 5px var(--aquamarine);
     font-size: 0.9rem;
     margin: 0 0 10px 5px;
 }

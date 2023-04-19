@@ -134,7 +134,7 @@ const Post = (props) => {
         {description && <Card.Text>{description}</Card.Text>}
         <Card.Text>
           Type:
-          <Badge variant="secondary" className={styles.BadgePost}>
+          <Badge className={styles.BadgePost}>
             {category}
           </Badge>
         </Card.Text>

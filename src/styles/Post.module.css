@@ -43,9 +43,13 @@
   align-items: center;
 }
 
-/* Type of badge within the post */
+/* Type of category badge within the post */
 .BadgePost {
   padding: 5px 8px;
   margin: 0 4px;
   font-size: inherit;
+  background-color: #fff;
+    color: var(--light-grey);
+    box-shadow: 2px 2px 5px var(--aquamarine) !important;
+    border-color: var(--aquamarine) !important;
 }

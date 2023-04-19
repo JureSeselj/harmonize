@@ -18,7 +18,7 @@ const PopularProfiles = () => {
         <>
           <p>Top Users</p>
           <div className={styles.UsersDisplay}>
-            {popularProfiles.results.slice(0, 3).map((profile) => (
+            {popularProfiles.results.slice(0, 4).map((profile) => (
               <Profile key={profile.id} profile={profile} />
             ))}
           </div>

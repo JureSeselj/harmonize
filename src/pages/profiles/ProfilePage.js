@@ -102,7 +102,7 @@ function ProfilePage() {
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => handleUnfollow(profile)}
               >
-                unfollow
+                Unfollow
               </Button>
             ) : (
               <Button
@@ -110,7 +110,7 @@ function ProfilePage() {
                 onMouseDown={(e) => e.preventDefault()}
                 onClick={() => handleFollow(profile)}
               >
-                follow
+                Follow
               </Button>
             ))}
         </Col>

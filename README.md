@@ -316,7 +316,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Contains like icon to allow user to like the post
 - Features comments section below the post
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-post-page.png">
 </details>
 
 ### Comments

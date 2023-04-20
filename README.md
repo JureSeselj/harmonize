@@ -324,7 +324,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Display passed time since adding the post (e.g. 4 minutes ago)
 - Users have an option to update or delete the comment
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-comments.png">
 </details>
 
 ### Likes

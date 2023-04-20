@@ -176,7 +176,7 @@ There were various components created and reused across this application.
 
 - `<PasswordCriteria />` - reusable component containing password criteria which are displayed on button hover or focus. Used on sign up page and profile password change page.
 
-- `<PopularProfiles />` - reusable component showing first three most followed profiles in the app. The component displays user avatar, name and follow/unfollow button. These buttons are hidden on medium screen size devices. The component is used across the app together with the `<LikeFeedAddPost />` component and post categories badges on relevant pages.
+- `<PopularProfiles />` - reusable component showing first four most followed profiles in the app. The component displays user avatar, name and Follow/Unfollow button. These buttons are hidden on medium screen size devices. The component is used across the app together with the `<LikeFeedAddPost />` component and post categories badges on relevant pages.
 
 ## Back-End API
 
@@ -248,7 +248,7 @@ The API for this Front-End application was built with the Django REST Framework.
 ### Main posts page
 - Main posts page is displayed for logged-in users instead of the landing page
 - Contains 3 small menus:
-  - Add, likes & feed
+  - Add, Likes & Feed
   - Top Users
   - Post category badges
 - Contain search bar above all posts
@@ -261,7 +261,7 @@ The API for this Front-End application was built with the Django REST Framework.
 ### Post page
 - Contains details of a single post - image, title, description (if provided by the user) and its category tag
 - Contains number of likes and comments the post has
-- Contains like icon to allow user to like the post
+- Contains heart icon to allow user to like the post
 - Features comments section below the post
 <details><summary>See feature screenshots</summary>
 <img src="docs/features/feature-post-page.png">

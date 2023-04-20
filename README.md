@@ -351,7 +351,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Displayed in the navbar, at top of the post, within profile page and by user comment
 - Displayed within ’Top Users’ menu
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-avatar.png">
 </details>
 
 ### Password change form

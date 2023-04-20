@@ -411,8 +411,8 @@ The API for this Front-End application was built with the Django REST Framework.
 - Allows search through liked posts only or posts by users followed
 - User can click on the eraser icon to clear the search content instead of hitting the backspace button
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-search-bar-1.png">
+<img src="docs/features/feature-search-bar-2.png">
 </details>
 
 ### 404 error page

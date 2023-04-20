@@ -343,7 +343,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Displays profile information if it was provided by the profile owner
 - Contains a dropdown menu to edit the profile and change profile password
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-profile-page.png">
 </details>
 
 ### Profile avatar

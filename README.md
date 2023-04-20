@@ -351,7 +351,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Displayed in the navbar, at top of the post, within profile page and by user comment
 - Displayed within ’Top Users’ menu
 <details><summary>See feature screenshots</summary>
-<img src="docs/features/feature-avatar.png">
+<img src="docs/features/feature-avatar.jpg">
 </details>
 
 ### Password change form
@@ -375,7 +375,7 @@ The API for this Front-End application was built with the Django REST Framework.
 ### Follow/unfollow
 - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-follow-unfollow.png">
 </details>
 
 ### ‘Add, liked, feed’ menu

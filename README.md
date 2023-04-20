@@ -28,19 +28,17 @@ The key functionality aspects:
       - [Typography](#typography)
       - [Imagery](#imagery)
       - [Wireframes](#wireframes)
-    - [Technologies Used](#technologies-used)
-      - [Languages](#languages)
-      - [Libraries, frameworks and dependencies](#libraries-frameworks-and-dependencies)
-      - [Tools & Programs](#tools--programs)
     - [Front-End](#front-end)
     - [Back-End API](#back-end-api)
     - [Features](#features)
     - [Future features / improvements](#future-features--improvements)
+    - [Technologies Used](#technologies-used)
+      - [Languages](#languages)
+      - [Libraries, frameworks and dependencies](#libraries-frameworks-and-dependencies)
+      - [Tools & Programs](#tools--programs)
 ## User Experience - UX
 
 ### User Stories
-
-### First sprint
 
 #### Navigation 
 
@@ -53,8 +51,6 @@ The key functionality aspects:
 4. As a new user, I can create a new account so that I can access the app 
 5. As a returning user, I can log in with my existing credentials so that I can access the app 
 6. As a user, I can maintain my logged-in status until I choose to log out so that my use of app is not compromised 
-
-### Second sprint
 
 #### Posts 
 
@@ -74,8 +70,6 @@ The key functionality aspects:
 17. As an owner of a comment, I can delete my comment from the post 
 18. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created
 
-### Third sprint
-
 #### Main page 
 
 19. As a user, I can view posts ordered by most recently added so that I am up to date with the newest content 
@@ -91,8 +85,6 @@ The key functionality aspects:
 26. As a user, I can view user's avatars so that I can easily identify other users of the app 
 27. As a user, I can update the picture and description of my profile on the profile page so that other users view up to date info about me 
 28. As a user, I can change password to my account so that I can keep my profile secure 
-
-### Fourth sprint
 
 #### Other Users Profiles 
 
@@ -146,49 +138,6 @@ Prompt features a tall x-height to aid in readability of mixed-case and lower-ca
 <img src="docs/wireframes/wireframes-harmonize-mobile.jpg">
 </details>
 
-## Technologies Used
-
-### Languages
-
-- HTML
-- CSS
-- Javascript
-  - React (17.0.2)
-
-### Libraries, frameworks and dependencies
-
-- [Axios](https://axios-http.com/docs/intro) - axios were used for promise-based HTTP. Justification: I used axios to send API requests from the React project to the API and avoid any CORS errors when sending cookies.
-- [ClassNames](https://www.npmjs.com/package/classnames/) - JavaScript utility for conditionally joining classNames together, used in the FeedbackMsg component. Justification: I used it to apply the styles dynamically based on the type of style and apply more than one style to elements in FeedbackMsg component
-- [JWT](https://jwt.io/) - library to decode out JSON Web token. Justification: I used JWT to prevent unauthenticated user from making extra network requests to refresh their access token. Also used to remove the timestamp from the browser when the user refreshes token expires or the user logs out.
-- [Popper](https://popper.js.org/) - a 3rd party library used by React-Bootstrap. Justification: I used Popper to make sure the dropdown menus position is fixed on all browsers.
-- [React 18](https://18.reactjs.org/) - JavaScript library for building user interfaces
-- [React-Bootstrap 4.6](https://react-bootstrap-v4.netlify.app/) - Justification: I used Bootstrap React library for UI components, styling and responsiveness.
-- [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - Justification: I used this component to load content (posts/comments) automatically as the user scrolls towards the bottom of the page without having to jump to next/previous page.
-- [React Router](https://v5.reactrouter.com/web/guides/quick-start) - used for dynamic routing. Justification: I used this library to enable the navigation among views of various components and control what the user sees depending on the URL they have accessed in the browser.
-
-### Tools & Programs
-
-- [Am I Responsive](http://ami.responsivedesign.is/) was used to create the multi-device mock-up at the top of this README.md file
-- [Balsamiq](https://balsamiq.com/) to create the projects wireframes
-- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/) was used for debugging of the code and checking site for responsiveness
-- [Cloudinary](https://cloudinary.com/) to store static files
-- [Coolors](https://coolors.co/?home) was used to create the color scheme palette
-- [Favicon.io](https://favicon.io) for making the site logo and favicon
-- [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome were used throughout the site
-- [Google Fonts](https://fonts.google.com/) - import of Inter font
-- [Git](https://git-scm.com/) was used for version control within VSCode to push the code to GitHub
-- [GitHub](https://github.com/) was used as a remote repository to store project code
-- [Gitpod](https://gitpod.io) was used to host a virtual workspace
-- [Heroku](https://www.heroku.com/) was used to deploy the project into live environment
-- [Remove.bg](https://www.remove.bg/) was used to remove background on app images
-- [Unscreen](https://www.unscreen.com/upload) - remove white background from the loading gif (spinner)
-- Validation:
-  - [WC3 Validator](https://validator.w3.org/) was used to validate the html
-  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate the css
-  - [ESLint](https://eslint.org/) used to validate JSX code
-  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practice and SEO of the app
-  - [Wave](https://wave.webaim.org/) - used to evaluate application accessibility
-
 [Back to Top](#table-of-contents)
 
 ## Front-End
@@ -235,7 +184,6 @@ There were various components created and reused across this application.
 
 The API for this Front-End application was built with the Django REST Framework. The repository with a README file for the DRF Back-End can be found [here](https://github.com/JureSeselj/harmonize-drf-api)
 
-[Back to Top](#table-of-contents)
 ## Features
 
 ### Landing page
@@ -337,6 +285,8 @@ The API for this Front-End application was built with the Django REST Framework.
 <img src="docs/features/feature-likes-2.png">
 </details>
 
+[Back to Top](#table-of-contents)
+
 ### Profile page
 - Contains information about the user
 - Displays info how many posts and followers user has and how many users they are following
@@ -425,7 +375,7 @@ The API for this Front-End application was built with the Django REST Framework.
 ### Feedback messages
 - User is provided with feedback message about the action their performed such as edited/deleted comment, updated profile or password, deleted a post
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-feedback-messages.png">
 </details>
 
 [Back to Top](#table-of-contents)
@@ -440,10 +390,53 @@ Example of potential improvements to this project:
 - Profile
   - Option to send a message to other user
 - Posts
-  - Additional field to include the recipe of the dish
+  - Add option for logged in users' to delete their post directly from posts page
   - Show most liked posts in the app - similar to ‘Top Users’ menu
 - Comments
   - Option to reply to a selected comment and create a conversation
   - Option to like/unlike other users’ comments
 
 I was initially planning to have the functionality to delete user account but I decided to keep all the signed-up users within the database and do not allow them to remove their profile.
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- Javascript
+  - React (17.0.2)
+
+### Libraries, frameworks and dependencies
+
+- [Axios](https://axios-http.com/docs/intro) - axios were used for promise-based HTTP. Justification: I used axios to send API requests from the React project to the API and avoid any CORS errors when sending cookies.
+- [ClassNames](https://www.npmjs.com/package/classnames/) - JavaScript utility for conditionally joining classNames together, used in the FeedbackMsg component. Justification: I used it to apply the styles dynamically based on the type of style and apply more than one style to elements in FeedbackMsg component
+- [JWT](https://jwt.io/) - library to decode out JSON Web token. Justification: I used JWT to prevent unauthenticated user from making extra network requests to refresh their access token. Also used to remove the timestamp from the browser when the user refreshes token expires or the user logs out.
+- [Popper](https://popper.js.org/) - a 3rd party library used by React-Bootstrap. Justification: I used Popper to make sure the dropdown menus position is fixed on all browsers.
+- [React 18](https://18.reactjs.org/) - JavaScript library for building user interfaces
+- [React-Bootstrap 4.6](https://react-bootstrap-v4.netlify.app/) - Justification: I used Bootstrap React library for UI components, styling and responsiveness.
+- [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - Justification: I used this component to load content (posts/comments) automatically as the user scrolls towards the bottom of the page without having to jump to next/previous page.
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start) - used for dynamic routing. Justification: I used this library to enable the navigation among views of various components and control what the user sees depending on the URL they have accessed in the browser.
+
+### Tools & Programs
+
+- [Am I Responsive](http://ami.responsivedesign.is/) was used to create the multi-device mock-up at the top of this README.md file
+- [Balsamiq](https://balsamiq.com/) to create the projects wireframes
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/) was used for debugging of the code and checking site for responsiveness
+- [Cloudinary](https://cloudinary.com/) to store static files
+- [Coolors](https://coolors.co/?home) was used to create the color scheme palette
+- [Favicon.io](https://favicon.io) for making the site logo and favicon
+- [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome were used throughout the site
+- [Google Fonts](https://fonts.google.com/) - import of Inter font
+- [Git](https://git-scm.com/) was used for version control within VSCode to push the code to GitHub
+- [GitHub](https://github.com/) was used as a remote repository to store project code
+- [Gitpod](https://gitpod.io) was used to host a virtual workspace
+- [Heroku](https://www.heroku.com/) was used to deploy the project into live environment
+- [Remove.bg](https://www.remove.bg/) was used to remove background on app images
+- [Unscreen](https://www.unscreen.com/upload) - remove white background from the loading gif (spinner)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/) was used to validate the html
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate the css
+  - [ESLint](https://eslint.org/) used to validate JSX code
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practice and SEO of the app
+  - [Wave](https://wave.webaim.org/) - used to evaluate application accessibility

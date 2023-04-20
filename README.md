@@ -419,7 +419,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Displays if the user enters a URL that does not exist
 - Contains a button to redirect user to the main page 
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-404-page.png">
 </details>
 
 ### Feedback messages

@@ -333,8 +333,8 @@ The API for this Front-End application was built with the Django REST Framework.
 - User cannot like their own posts
 - Allow user to narrow their search to liked posts only when clicked on the ‘Feed’ option in the small menu
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-likes-1.png">
+<img src="docs/features/feature-likes-2.png">
 </details>
 
 ### Profile page

@@ -307,7 +307,7 @@ The API for this Front-End application was built with the Django REST Framework.
 - Without any applied search filter displays posts added by all users
 - Display all posts ordered by the most recent one
 <details><summary>See feature screenshots</summary>
-<img src="">
+<img src="docs/features/feature-main-posts-page.png">
 </details>
 
 ### Post page

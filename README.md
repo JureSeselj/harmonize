@@ -384,8 +384,8 @@ The API for this Front-End application was built with the Django REST Framework.
 - Allow user to view only posts they liked
 - Allow user to view only posts created by users they follow
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-add-liked-feed-1.png">
+<img src="docs/features/feature-add-liked-feed-2.png">
 </details>
 
 ### Top Users menu

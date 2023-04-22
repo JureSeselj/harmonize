@@ -18,6 +18,8 @@ The key functionality aspects:
 
 [Live Project Here]()
 
+![Mockup image](docs/readme/harmonize-mockup.png)
+
 # Table of Contents
 - [Harmonize - Introduction](#harmonize)
     - [Goal for this Project](#goal-for-this-project)

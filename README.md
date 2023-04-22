@@ -517,6 +517,10 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 <img src="docs/validation/css-validation-small-menu-container.png"> 
 </details> 
 
+### JSX
+
+### Chrome Dev Tools Lighthouse 
+
 ## Technologies Used
 
 ### Languages

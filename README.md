@@ -521,6 +521,447 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### Chrome Dev Tools Lighthouse 
 
+## Testing
+ 
+### Manual testing of user stories
+
+1. As a user, I can see the home page with explanation of the portal, so that I know what the app is about
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to https://harmonize-app.herokuapp.com/ | Landing page loads with application description | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+2. As a user, I can see a navbar on every page, so that I can easily return to main page and access my profile page
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Load any page of the application| Navbar with different links is displayed on top of each page | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+3. As a logged-out user, I can see log in and sign up options so that I can log in or sign up
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the main page and ensure you are logged out. If logged in, click on the profile avatar in the navbar and select ‘logout’ from the dropdown menu | Redirects to the landing page and displays options to log in or sign up | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+4. As a new user, I can create a new account so that I can access the app
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to https://harmonize-app.herokuapp.com/, click ‘sign up’ icon in the navbar or ‘Happy to join!’ button. Type username, password and confirm the password | Redirects user to login page and on successful login with created credentials the user is logged in and this is indicated by display of their username and default avatar in the navbar | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+5. As a returning user, I can log in with my existing credentials so that I can access the app
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+If logged out, on the landing page click on the ‘log in’ icon in the navbar or ‘I’m already a member, log me in!’ button. Type your existing username and password | Logs user in and displays the main posts page. Displays username and default avatar/profile picture in the navbar | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+6.	As a user, I can maintain my logged-in status until I choose to log out so that my use of app is not compromised
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Log in to the application and do not log out within the 24 hours | Users stay logged in for 24 hours unless choosing to log out themselves | Works as expected |
+
+7. As a user, I can create posts so that I can share my images with the community
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the ‘Add post’ in the left-hand side small menu and the posts create page will be shown | Add the post title, select the category and upload image (post description is optional) and click ‘create’ button. The post will appear in the main posts page | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+8.	As a user, I can categorise my post so that other users can find it by its tag
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the ‘Add post’ in the left-hand side small menu and the posts create page will be shown. Add posts details and select a category of the post (mandatory field) | Post is added and a category badge (type of cuisine) is displayed within the post under its title and description | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+9.  As a user, I can view other people’s posts so that I can get inspired by their images 
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+As a logged in user navigate to the main page by clicking on the 'Home' icon in the navbar | All posts will be displayed on the page | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+10. As a user, I can view the details of a single post so that I can see its full description and other users’ comments
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main post page click on the post image | Redirects to a specific post page and displays post details | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+</details>
+
+11. As user, I can like a specific post so that I can show my interest
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main page or within specific profile page, click on the like icon under the post | Post is liked and like icon is marked green. Post is added to liked post page (/liked) | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+12.  As a user, I can view the details of a single post so that I can read other users’ comments and know what they think about it
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the post image | Redirects to a chosen post page and displays post details with comments below | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+</details>
+
+13.  As a user, I can view a category for the post so that I know what the image is related to
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+(no specific step to follow) | Once the post has been created by the user, a category is displayed within each post | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+14. As user, I can add comments to a post so that I can share my thoughts about the post with the community
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Within the post page (click on the post image to navigate to) under the post write your comment in the comment box and click 'Add' | Adds a comment to the comments list and increments the number of likes by 1 | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+<img src="">
+</details>
+
+15. As a user, I can see when the comments were created so that I know how old a comment is
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on a post image to navigate to the post page  | All comments with the creation date are displayed under the post | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+16. As an owner of a comment, I can edit my comment so that I can update my existing comment
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+In the post page, click on the dropdown icon on the right hand side of your comment and click edit icon | Opens the edit post box | Works as expected |
+Update the comment and click 'Update' button | Updates the comment, displays updated date to 'now' and displays a feedback message to the user | Works as expected |
+
+Note: editing of other users' comments is not possible
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+17. As an owner of a comment, I can delete my comment from the post
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+In the post page, click on the dropdown icon on the right hand side of your comment and click delete (bin) icon | Removes the comment from all comments, displays a feedback message to the user in place of the comment and decrements the number of likes by 1 once the message has disappeared after a delay | Works as expected |
+
+Note: deleting other users' comments is not possible
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+18. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the post you have added and within the post page click on the dropdown menu and then edit post icon | Redirects to the edit post page | Works as expected |
+In the edit post page update details of your post and click 'Save' button | Updates post details and redirects to the post page | Works as expected |
+
+Note: editing of other users' post is not possible
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+19. As a user, I can view posts ordered by most recently added so that I am up to date with the newest content
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Add a new post and navigate to the main posts page | Adds post on top of the other posts and displays a date when it was added | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+20. As a user, I can keep scrolling through the posts so that they are loaded automatically and I don't have to select the next page
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the main posts page and scroll to the bottom of the page | Loads new content and moves the scroll bar. Displays a spinning icon before the posts have been loaded | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+21. As a user, I can see the posts I liked so that I can find the posts I enjoy the most
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main posts page click on the 'Liked posts' icon/text | Loads all liked posts | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+22. As a user, I can view posts from users I followed, so I can follow their activity
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main posts page click on the 'Feed' icon/text | Loads all posts from followed users | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+23. As a user, I can view posts category tags, so that I choose posts to display that I’m particularly interested in
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main posts page click on the category badge of posts you'd like to view | Loads all posts with the selected category | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+24. As a user, I can search for posts with keywords so that I can find the posts I am interested in
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+On the main posts page click on the search bar and type a phrase | Searches through all posts, users and post categories and displays posts containing searched words in their title, username or category | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+25. As a user, I can add my profile avatar so that other users can easily identify me
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Each user has a default avatar upon signing up to the app. Click on the profile avatar/user name in the navbar and select the 'Profile' from the dropdown | Redirects to the profile page | Works as expected |
+Click on the dropdown menu and 'edit' icon | Redirects to the edit profile page | Works as expected |
+Upload a profile avatar and click 'Save' | Saves user profile, displays a feedback message to the user, redirects to user profile page and displays updated user avatar and info | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+26. As a user, I can view user's avatars so that I can easily identify other users of the app
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the main page or specific post page | User avatars are displayed next to username in top users, by each post or user comment | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+27. As a user, I can update the picture and description of my profile on the profile page so that other users view up to date info about me
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the user profile page and click on the dropdown menu and 'edit' icon | Redirects to the profile page | Works as expected |
+Add profile description and click 'Save' button | Saves user profile information, displays a feedback message to the user, redirects to user profile page and displays updated user info | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+28. As a user, I can change password to my account so that I can keep my profile secure
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Navigate to the user profile page and click on the dropdown menu and the key icon | Redirects to the password change page | Works as expected |
+Input password in the 'new password' and 'confirm password' fields | Displays warning massage if password criteria are not met. Otherwise, saves a new password, displays a feedback message and redirects user to the profile page after a short delay | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+29. As a user, I can view all the posts by a specific user so that I can see their latest activity
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the user avatar or name | Redirects to the chosen user profile page and displays all their posts within the profile page | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+30. As a user, I can view other users’ profiles with their profile description, number of posts, followers and users followed so that I can learn more about them
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the user avatar or name | Redirects to the chosen user profile page and displays user avatar, number of followers, number of users followed, number of posts, user profile description (if added by the user) and user posts | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+
+31. As a user, I can follow and unfollow other users so that I can get specific users’ posts in my posts feed
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Click on the 'follow' button within the user profile page or by the username in 'Top Users' menu | Follows the user, increases the 'following' number on current profile and increases the number of followers on followed user's profile | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+32. As a user, I can see a list of the most followed profiles so that I can see which profiles are popular
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+(no specific step to follow) | The small navigation menu with top most followed profiles is displayed on the main page, specific post page and profile page | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+33. As a site owner I want my site to be fully responsive so that users can you use it on different devices
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Change device screen size using chrome dev tools | The web functionality remains the same on various screen sizes | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
+
+34. As a site owner, I want users to come to a 404 error page so that they don't have to user the browser back button if they enter a URL that does not exist
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+Type the wrong page in the www address (e.g. https://harmonize-app.herokuapp.com/xzy) | Reroutes to a customised 404 page | Works as expected |
+
+<details><summary>Screenshot</summary>
+<img src="">
+</details>
+
+35. As a site user, I can view feedback messages, so that I know if my comment/profile/post has been updated
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+In the post page comments section click on the dropdown menu and 'edit' icon to edit your existing comment. Make changes to your comment and click 'Update' | Saves the comment, changes time display to 'now' and displays the feedback message to the user | Works as expected |
+In the post page comments section click on the dropdown menu and 'bin' icon to delete your existing comment | Deletes the comment and displays the feedback message in its place | Works as expected |
+In the profile page click on the dropdown menu and 'edit' icon to edit user profile. Make desired changes and click 'Save' | Updates the profile, displays the feedback message and redirects the user to their profile page after a short delay | Works as expected |
+In the profile page click on the dropdown menu and the key icon to change user password. Update the password and click 'Save' | Updates the password, displays the feedback message and redirects the user to their profile page after a short delay | Works as expected |
+Within the post page click on the dropdown menu and 'bin' icon to delete the post | Deletes the post, displays the feedback message and redirects the user to the main posts page | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+</details>
+
 ## Technologies Used
 
 ### Languages

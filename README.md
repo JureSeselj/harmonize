@@ -400,6 +400,51 @@ Example of potential improvements to this project:
 
 I was initially planning to have the functionality to delete user account but I decided to keep all the signed-up users within the database and do not allow them to remove their profile.
 
+## Validation 
+
+### HTML
+The W3C Markup Validation Service was used to validate the HTML of the website. No errors were identified. 
+
+<details><summary>Main page</summary> 
+<img src="docs/validation/html-validation-main-page.png"> 
+</details> 
+
+<details><summary>Signup page</summary> 
+<img src="docs/validation/html-validation-signup-page.png"> 
+</details>
+
+<details><summary>Login page</summary> 
+<img src="docs/validation/html-validation-login-page.png"> 
+</details>
+
+<details><summary>Post page</summary>
+<img src="docs/validation/html-validation-post-page.png">
+</details>
+
+<details><summary>Post create page</summary>
+<img src="docs/validation/html-validation-post-create-page.png">
+</details>
+
+<details><summary>Post edit page</summary>
+<img src="docs/validation/html-validation-post-edit-page.png">
+</details>
+
+<details><summary>Profile page</summary>
+<img src="docs/validation/html-validation-profile-page.png">
+</details>
+
+<details><summary>Profile edit page</summary>
+<img src="docs/validation/html-validation-profile-edit-page.png">
+</details>
+
+<details><summary>Password change page</summary>
+<img src="docs/validation/html-validation-password-change-page.png">
+</details>
+
+<details><summary>404 error page</summary>
+<img src="docs/validation/html-validation-404-page.png">
+</details>
+
 ## Technologies Used
 
 ### Languages

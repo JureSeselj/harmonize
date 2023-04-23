@@ -801,8 +801,6 @@ On the main posts page click on the search bar and type a phrase | Searches thro
 <details><summary>Screenshots</summary>
 <img src="">
 <img src="">
-<img src="">
-<img src="">
 </details>
 
 25. As a user, I can add my profile avatar so that other users can easily identify me

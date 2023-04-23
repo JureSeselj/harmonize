@@ -532,7 +532,7 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 Navigate to https://harmonize-app.herokuapp.com/ | Landing page loads with application description | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-01.png">
 </details>
 
 2. As a user, I can see a navbar on every page, so that I can easily return to main page and access my profile page
@@ -541,11 +541,11 @@ Navigate to https://harmonize-app.herokuapp.com/ | Landing page loads with appli
 ------------ | ------------ | ------------ |
 Load any page of the application| Navbar with different links is displayed on top of each page | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-02-a.png">
+<img src="docs/testing/user-stories-testing/user-story-02-b.png">
+<img src="docs/testing/user-stories-testing/user-story-02-c.png">
+<img src="docs/testing/user-stories-testing/user-story-02-d.png">
 </details>
 
 3. As a logged-out user, I can see log in and sign up options so that I can log in or sign up
@@ -555,7 +555,7 @@ Load any page of the application| Navbar with different links is displayed on to
 Navigate to the main page and ensure you are logged out. If logged in, click on the profile avatar in the navbar and select ‘logout’ from the dropdown menu | Redirects to the landing page and displays options to log in or sign up | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-03.png">
 </details>
 
 4. As a new user, I can create a new account so that I can access the app
@@ -564,11 +564,11 @@ Navigate to the main page and ensure you are logged out. If logged in, click on 
 ------------ | ------------ | ------------ |
 Navigate to https://harmonize-app.herokuapp.com/, click ‘sign up’ icon in the navbar or ‘Happy to join!’ button. Type username, password and confirm the password | Redirects user to login page and on successful login with created credentials the user is logged in and this is indicated by display of their username and default avatar in the navbar | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-04-a.png">
+<img src="docs/testing/user-stories-testing/user-story-04-b.png">
+<img src="docs/testing/user-stories-testing/user-story-04-c.png">
+<img src="docs/testing/user-stories-testing/user-story-04-d.png">
 </details>
 
 5. As a returning user, I can log in with my existing credentials so that I can access the app
@@ -577,10 +577,10 @@ Navigate to https://harmonize-app.herokuapp.com/, click ‘sign up’ icon in th
 ------------ | ------------ | ------------ |
 If logged out, on the landing page click on the ‘log in’ icon in the navbar or ‘I’m already a member, log me in!’ button. Type your existing username and password | Logs user in and displays the main posts page. Displays username and default avatar/profile picture in the navbar | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-05-a.png">
+<img src="docs/testing/user-stories-testing/user-story-05-b.png">
+<img src="docs/testing/user-stories-testing/user-story-05-c.png">
 </details>
 
 6.	As a user, I can maintain my logged-in status until I choose to log out so that my use of app is not compromised
@@ -595,10 +595,10 @@ Log in to the application and do not log out within the 24 hours | Users stay lo
 ------------ | ------------ | ------------ |
 Click on the ‘Add post’ in the left-hand side small menu and the posts create page will be shown | Add the post title, select the category and upload image (post description is optional) and click ‘create’ button. The post will appear in the main posts page | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-07-a.png">
+<img src="docs/testing/user-stories-testing/user-story-07-b.png">
+<img src="docs/testing/user-stories-testing/user-story-07-c.png">
 </details>
 
 8.	As a user, I can categorise my post so that other users can find it by its tag
@@ -607,10 +607,10 @@ Click on the ‘Add post’ in the left-hand side small menu and the posts creat
 ------------ | ------------ | ------------ |
 Click on the ‘Add post’ in the left-hand side small menu and the posts create page will be shown. Add posts details and select a category of the post (mandatory field) | Post is added and a category badge (type of cuisine) is displayed within the post under its title and description | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-08-a.png">
+<img src="docs/testing/user-stories-testing/user-story-08-b.png">
+<img src="docs/testing/user-stories-testing/user-story-08-c.png">
 </details>
 
 9.  As a user, I can view other people’s posts so that I can get inspired by their images 
@@ -620,7 +620,7 @@ Click on the ‘Add post’ in the left-hand side small menu and the posts creat
 As a logged in user navigate to the main page by clicking on the 'Home' icon in the navbar | All posts will be displayed on the page | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-09-a.png">
 </details>
 
 10. As a user, I can view the details of a single post so that I can see its full description and other users’ comments
@@ -629,9 +629,9 @@ As a logged in user navigate to the main page by clicking on the 'Home' icon in 
 ------------ | ------------ | ------------ |
 On the main post page click on the post image | Redirects to a specific post page and displays post details | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-10-a.png">
+<img src="docs/testing/user-stories-testing/user-story-10-b.png">
 </details>
 
 11. As user, I can like a specific post so that I can show my interest
@@ -640,10 +640,10 @@ On the main post page click on the post image | Redirects to a specific post pag
 ------------ | ------------ | ------------ |
 On the main page or within specific profile page, click on the like icon under the post | Post is liked and like icon is marked green. Post is added to liked post page (/liked) | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-11-a.png">
+<img src="docs/testing/user-stories-testing/user-story-11-b.png">
+<img src="docs/testing/user-stories-testing/user-story-11-c.png">
 </details>
 
 12.  As a user, I can view the details of a single post so that I can read other users’ comments and know what they think about it
@@ -652,9 +652,9 @@ On the main page or within specific profile page, click on the like icon under t
 ------------ | ------------ | ------------ |
 Click on the post image | Redirects to a chosen post page and displays post details with comments below | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-12-a.png">
+<img src="docs/testing/user-stories-testing/user-story-12-b.png">
 </details>
 
 13.  As a user, I can view a category for the post so that I know what the image is related to
@@ -664,7 +664,7 @@ Click on the post image | Redirects to a chosen post page and displays post deta
 (no specific step to follow) | Once the post has been created by the user, a category is displayed within each post | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-13.png">
 </details>
 
 14. As user, I can add comments to a post so that I can share my thoughts about the post with the community
@@ -673,9 +673,9 @@ Click on the post image | Redirects to a chosen post page and displays post deta
 ------------ | ------------ | ------------ |
 Within the post page (click on the post image to navigate to) under the post write your comment in the comment box and click 'Add' | Adds a comment to the comments list and increments the number of likes by 1 | Works as expected |
 
-<details><summary>Screenshot</summary>
-<img src="">
-<img src="">
+<details><summary>Screenshots</summary>
+<img src="docs/testing/user-stories-testing/user-story-14-a.png">
+<img src="docs/testing/user-stories-testing/user-story-14-b.png">
 </details>
 
 15. As a user, I can see when the comments were created so that I know how old a comment is
@@ -685,7 +685,7 @@ Within the post page (click on the post image to navigate to) under the post wri
 Click on a post image to navigate to the post page  | All comments with the creation date are displayed under the post | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-15.png">
 </details>
 
 16. As an owner of a comment, I can edit my comment so that I can update my existing comment
@@ -698,9 +698,9 @@ Update the comment and click 'Update' button | Updates the comment, displays upd
 Note: editing of other users' comments is not possible
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-16-a.png">
+<img src="docs/testing/user-stories-testing/user-story-16-b.png">
+<img src="docs/testing/user-stories-testing/user-story-16-b.png">
 </details>
 
 17. As an owner of a comment, I can delete my comment from the post
@@ -712,9 +712,9 @@ In the post page, click on the dropdown icon on the right hand side of your comm
 Note: deleting other users' comments is not possible
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-17-a.png">
+<img src="docs/testing/user-stories-testing/user-story-17-b.png">
+<img src="docs/testing/user-stories-testing/user-story-17-c.png">
 </details>
 
 18. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created
@@ -727,10 +727,10 @@ In the edit post page update details of your post and click 'Save' button | Upda
 Note: editing of other users' post is not possible
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-18-a.png">
+<img src="docs/testing/user-stories-testing/user-story-18-b.png">
+<img src="docs/testing/user-stories-testing/user-story-18-c.png">
+<img src="docs/testing/user-stories-testing/user-story-18-d.png">
 </details>
 
 19. As a user, I can view posts ordered by most recently added so that I am up to date with the newest content
@@ -740,7 +740,7 @@ Note: editing of other users' post is not possible
 Add a new post and navigate to the main posts page | Adds post on top of the other posts and displays a date when it was added | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-19.png">
 </details>
 
 20. As a user, I can keep scrolling through the posts so that they are loaded automatically and I don't have to select the next page
@@ -750,8 +750,8 @@ Add a new post and navigate to the main posts page | Adds post on top of the oth
 Navigate to the main posts page and scroll to the bottom of the page | Loads new content and moves the scroll bar. Displays a spinning icon before the posts have been loaded | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-20-a.png">
+<img src="docs/testing/user-stories-testing/user-story-20-b.png">
 </details>
 
 21. As a user, I can see the posts I liked so that I can find the posts I enjoy the most
@@ -761,11 +761,10 @@ Navigate to the main posts page and scroll to the bottom of the page | Loads new
 On the main posts page click on the 'Liked posts' icon/text | Loads all liked posts | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-21-a.png">
+<img src="docs/testing/user-stories-testing/user-story-21-b.png">
+<img src="docs/testing/user-stories-testing/user-story-21-c.png">
 </details>
-
 
 22. As a user, I can view posts from users I followed, so I can follow their activity
 
@@ -774,8 +773,8 @@ On the main posts page click on the 'Liked posts' icon/text | Loads all liked po
 On the main posts page click on the 'Feed' icon/text | Loads all posts from followed users | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-22-a.png">
+<img src="docs/testing/user-stories-testing/user-story-22-b.png">
 </details>
 
 23. As a user, I can view posts category tags, so that I choose posts to display that I’m particularly interested in
@@ -785,12 +784,11 @@ On the main posts page click on the 'Feed' icon/text | Loads all posts from foll
 On the main posts page click on the category badge of posts you'd like to view | Loads all posts with the selected category | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-23-a.png">
+<img src="docs/testing/user-stories-testing/user-story-23-b.png">
+<img src="docs/testing/user-stories-testing/user-story-23-c.png">
+<img src="docs/testing/user-stories-testing/user-story-23-d.png">
 </details>
-
 
 24. As a user, I can search for posts with keywords so that I can find the posts I am interested in
 
@@ -799,8 +797,8 @@ On the main posts page click on the category badge of posts you'd like to view |
 On the main posts page click on the search bar and type a phrase | Searches through all posts, users and post categories and displays posts containing searched words in their title, username or category | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-24-a.png">
+<img src="docs/testing/user-stories-testing/user-story-24-b.png">
 </details>
 
 25. As a user, I can add my profile avatar so that other users can easily identify me
@@ -812,10 +810,10 @@ Click on the dropdown menu and 'edit' icon | Redirects to the edit profile page 
 Upload a profile avatar and click 'Save' | Saves user profile, displays a feedback message to the user, redirects to user profile page and displays updated user avatar and info | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-25-a.png">
+<img src="docs/testing/user-stories-testing/user-story-25-b.png">
+<img src="docs/testing/user-stories-testing/user-story-25-c.png">
+<img src="docs/testing/user-stories-testing/user-story-25-d.png">
 </details>
 
 26. As a user, I can view user's avatars so that I can easily identify other users of the app
@@ -825,11 +823,10 @@ Upload a profile avatar and click 'Save' | Saves user profile, displays a feedba
 Navigate to the main page or specific post page | User avatars are displayed next to username in top users, by each post or user comment | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-26-a.png">
+<img src="docs/testing/user-stories-testing/user-story-26-b.png">
+<img src="docs/testing/user-stories-testing/user-story-26-c.png">
 </details>
-
 
 27. As a user, I can update the picture and description of my profile on the profile page so that other users view up to date info about me
 
@@ -839,12 +836,11 @@ Navigate to the user profile page and click on the dropdown menu and 'edit' icon
 Add profile description and click 'Save' button | Saves user profile information, displays a feedback message to the user, redirects to user profile page and displays updated user info | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-27-a.png">
+<img src="docs/testing/user-stories-testing/user-story-27-b.png">
+<img src="docs/testing/user-stories-testing/user-story-27-c.png">
+<img src="docs/testing/user-stories-testing/user-story-27-d.png">
 </details>
-
 
 28. As a user, I can change password to my account so that I can keep my profile secure
 
@@ -854,10 +850,10 @@ Navigate to the user profile page and click on the dropdown menu and the key ico
 Input password in the 'new password' and 'confirm password' fields | Displays warning massage if password criteria are not met. Otherwise, saves a new password, displays a feedback message and redirects user to the profile page after a short delay | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-28-a.png">
+<img src="docs/testing/user-stories-testing/user-story-28-b.png">
+<img src="docs/testing/user-stories-testing/user-story-28-c.png">
+<img src="docs/testing/user-stories-testing/user-story-28-d.png">
 </details>
 
 29. As a user, I can view all the posts by a specific user so that I can see their latest activity
@@ -867,11 +863,10 @@ Input password in the 'new password' and 'confirm password' fields | Displays wa
 Click on the user avatar or name | Redirects to the chosen user profile page and displays all their posts within the profile page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-29-a.png">
+<img src="docs/testing/user-stories-testing/user-story-29-b.png">
+<img src="docs/testing/user-stories-testing/user-story-29-c.png">
 </details>
-
 
 30. As a user, I can view other users’ profiles with their profile description, number of posts, followers and users followed so that I can learn more about them
 
@@ -880,10 +875,9 @@ Click on the user avatar or name | Redirects to the chosen user profile page and
 Click on the user avatar or name | Redirects to the chosen user profile page and displays user avatar, number of followers, number of users followed, number of posts, user profile description (if added by the user) and user posts | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-30-a.png">
+<img src="docs/testing/user-stories-testing/user-story-30-b.png">
 </details>
-
 
 31. As a user, I can follow and unfollow other users so that I can get specific users’ posts in my posts feed
 
@@ -892,10 +886,10 @@ Click on the user avatar or name | Redirects to the chosen user profile page and
 Click on the 'follow' button within the user profile page or by the username in 'Top Users' menu | Follows the user, increases the 'following' number on current profile and increases the number of followers on followed user's profile | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-31-a.png">
+<img src="docs/testing/user-stories-testing/user-story-31-b.png">
+<img src="docs/testing/user-stories-testing/user-story-31-c.png">
+<img src="docs/testing/user-stories-testing/user-story-31-d.png">
 </details>
 
 32. As a user, I can see a list of the most followed profiles so that I can see which profiles are popular
@@ -905,11 +899,10 @@ Click on the 'follow' button within the user profile page or by the username in 
 (no specific step to follow) | The small navigation menu with top most followed profiles is displayed on the main page, specific post page and profile page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-32-a.png">
+<img src="docs/testing/user-stories-testing/user-story-32-b.png">
+<img src="docs/testing/user-stories-testing/user-story-32-c.png">
 </details>
-
 
 33. As a site owner I want my site to be fully responsive so that users can you use it on different devices
 
@@ -918,14 +911,13 @@ Click on the 'follow' button within the user profile page or by the username in 
 Change device screen size using chrome dev tools | The web functionality remains the same on various screen sizes | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-33-a.png">
+<img src="docs/testing/user-stories-testing/user-story-33-b.png">
+<img src="docs/testing/user-stories-testing/user-story-33-c.png">
+<img src="docs/testing/user-stories-testing/user-story-33-d.png">
+<img src="docs/testing/user-stories-testing/user-story-33-e.png">
+<img src="docs/testing/user-stories-testing/user-story-33-f.png">
 </details>
-
 
 34. As a site owner, I want users to come to a 404 error page so that they don't have to user the browser back button if they enter a URL that does not exist
 
@@ -934,7 +926,7 @@ Change device screen size using chrome dev tools | The web functionality remains
 Type the wrong page in the www address (e.g. https://harmonize-app.herokuapp.com/xzy) | Reroutes to a customised 404 page | Works as expected |
 
 <details><summary>Screenshot</summary>
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-34.png">
 </details>
 
 35. As a site user, I can view feedback messages, so that I know if my comment/profile/post has been updated
@@ -948,16 +940,16 @@ In the profile page click on the dropdown menu and the key icon to change user p
 Within the post page click on the dropdown menu and 'bin' icon to delete the post | Deletes the post, displays the feedback message and redirects the user to the main posts page | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
-<img src="">
+<img src="docs/testing/user-stories-testing/user-story-35-a.png">
+<img src="docs/testing/user-stories-testing/user-story-35-b.png">
+<img src="docs/testing/user-stories-testing/user-story-35-c.png">
+<img src="docs/testing/user-stories-testing/user-story-35-d.png">
+<img src="docs/testing/user-stories-testing/user-story-35-e.png">
+<img src="docs/testing/user-stories-testing/user-story-35-f.png">
+<img src="docs/testing/user-stories-testing/user-story-35-g.png">
+<img src="docs/testing/user-stories-testing/user-story-35-h.png">
+<img src="docs/testing/user-stories-testing/user-story-35-i.png">
+<img src="docs/testing/user-stories-testing/user-story-35-j.png">
 </details>
 
 ## Technologies Used

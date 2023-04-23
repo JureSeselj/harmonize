@@ -700,7 +700,7 @@ Note: editing of other users' comments is not possible
 <details><summary>Screenshots</summary>
 <img src="docs/testing/user-stories-testing/user-story-16-a.png">
 <img src="docs/testing/user-stories-testing/user-story-16-b.png">
-<img src="docs/testing/user-stories-testing/user-story-16-b.png">
+<img src="docs/testing/user-stories-testing/user-story-16-c.png">
 </details>
 
 17. As an owner of a comment, I can delete my comment from the post

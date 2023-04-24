@@ -320,8 +320,8 @@ The API for this Front-End application was built with the Django REST Framework.
 - Improves general user experience and user engagement
 - Displays the loading spinner before loading
 <details><summary>See feature screenshots</summary>
-<img src="">
-<img src="">
+<img src="docs/features/feature-infinite-scroll-1.png">
+<img src="docs/features/feature-infinite-scroll-2.png">
 </details>
 
 ### Follow/unfollow
@@ -967,7 +967,7 @@ Within the post page click on the dropdown menu and 'bin' icon to delete the pos
 - [ClassNames](https://www.npmjs.com/package/classnames/) - JavaScript utility for conditionally joining classNames together, used in the FeedbackMsg component. Justification: I used it to apply the styles dynamically based on the type of style and apply more than one style to elements in FeedbackMsg component
 - [JWT](https://jwt.io/) - library to decode out JSON Web token. Justification: I used JWT to prevent unauthenticated user from making extra network requests to refresh their access token. Also used to remove the timestamp from the browser when the user refreshes token expires or the user logs out.
 - [Popper](https://popper.js.org/) - a 3rd party library used by React-Bootstrap. Justification: I used Popper to make sure the dropdown menus position is fixed on all browsers.
-- [React 18](https://18.reactjs.org/) - JavaScript library for building user interfaces
+- [React 17](https://17.reactjs.org/) - JavaScript library for building user interfaces
 - [React-Bootstrap 4.6](https://react-bootstrap-v4.netlify.app/) - Justification: I used Bootstrap React library for UI components, styling and responsiveness.
 - [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - Justification: I used this component to load content (posts/comments) automatically as the user scrolls towards the bottom of the page without having to jump to next/previous page.
 - [React Router](https://v5.reactrouter.com/web/guides/quick-start) - used for dynamic routing. Justification: I used this library to enable the navigation among views of various components and control what the user sees depending on the URL they have accessed in the browser.

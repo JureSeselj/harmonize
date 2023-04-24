@@ -975,10 +975,10 @@ Within the post page click on the dropdown menu and 'bin' icon to delete the pos
 ### Tools & Programs
 
 - [Am I Responsive](http://ami.responsivedesign.is/) was used to create the multi-device mock-up at the top of this README.md file
-- [Balsamiq](https://balsamiq.com/) to create the projects wireframes
+- [Moqups](https://app.moqups.com/) to create the projects wireframes
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/) was used for debugging of the code and checking site for responsiveness
 - [Cloudinary](https://cloudinary.com/) to store static files
-- [Coolors](https://coolors.co/?home) was used to create the color scheme palette
+- [Canva](https://www.canva.com/) was used to create the color scheme palette
 - [Favicon.io](https://favicon.io) for making the site logo and favicon
 - [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome were used throughout the site
 - [Google Fonts](https://fonts.google.com/) - import of Inter font

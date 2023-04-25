@@ -54,7 +54,6 @@ const Landing = () => {
         <div className="float-left">
           <p>Designed by Jure Seselj</p>
         </div>
-
         <div className="float-right pb-3">
         <a
             href="https://www.linkedin.com/in/jure-seselj-062654192/"

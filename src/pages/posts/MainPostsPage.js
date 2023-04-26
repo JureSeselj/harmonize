@@ -81,7 +81,7 @@ function MainPostsPage({ message, filter = "" }) {
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Fun Fact")}>Fun fact</Badge>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Creative")}>Creative</Badge>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Nature")}>Nature</Badge>
-            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Arts & Entertainment")}>Arts & Entertainment</Badge>
+            <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Art")}>Art</Badge>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Books")}>Books</Badge>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Design & Fashion")}>Design & Fashion</Badge>
             <Badge variant="secondary" pill className={`${styles.Badge}`} onClick={() => setCategory("Education")}>Education</Badge>

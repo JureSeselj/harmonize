@@ -143,7 +143,7 @@ function PostEditForm() {
           <option value="Fun Fact">Fun fact</option>
           <option value="Creative">Creative</option>
           <option value="Nature">Nature</option>
-          <option value="Arts & Entertainment">Arts & Entertainment</option>
+          <option value="Art">Art</option>
           <option value="Books">Books</option>
           <option value="Design & Fashion">Design & Fashion</option>
           <option value="Education">Education</option>

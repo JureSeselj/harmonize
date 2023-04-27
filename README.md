@@ -16,7 +16,7 @@ The key functionality aspects:
 - Posts filtering by liked posts and followed users posts
 - Responsiveness to allow users use the app on various devices
 
-[Live Project Here]()
+[Live Project Here](https://harmonize-app.herokuapp.com/)
 
 ![Mockup image](docs/readme/harmonize-mockup.png)
 
@@ -41,23 +41,23 @@ The key functionality aspects:
       - [Languages](#languages)
       - [Libraries, frameworks and dependencies](#libraries-frameworks-and-dependencies)
       - [Tools & Programs](#tools--programs)
-## User Experience - UX
+# User Experience - UX
 
-### User Stories
+## User Stories
 
-#### Navigation 
+### Navigation 
 
 1. As a user, I can see the home page with explanation of the portal, so that I know what the app is about
 2. As a user, I can see a navbar on every page, so that I can easily return to main page and access my profile page
 3. As a logged-out user, I can see log in and sign up options so that I can log in or sign up
  
-#### Authentication 
+### Authentication 
 
 4. As a new user, I can create a new account so that I can access the app 
 5. As a returning user, I can log in with my existing credentials so that I can access the app 
 6. As a user, I can maintain my logged-in status until I choose to log out so that my use of app is not compromised 
 
-#### Posts 
+### Posts 
 
 7. As a user, I can create posts so that I can share my images with the community 
 8. As a user, I can categorise my post so that other users can find it by its tag 
@@ -65,7 +65,7 @@ The key functionality aspects:
 10.  As a user, I can view the details of a single post so that I can see its full description and other users comments 
 11. As user, I can like a specific post so that I can show my interest 
 
-#### The Post Page 
+### The Post Page 
 
 12. As a user, I can view the details of a single post so that I can read other users comments and know what they think about it
 13. As a user, I can view a category for the post so that I know what the image is related to 
@@ -75,7 +75,7 @@ The key functionality aspects:
 17. As an owner of a comment, I can delete my comment from the post 
 18. As a post owner, I can edit my post title and description so that I can make corrections or update my post after it was created
 
-#### Main page 
+### Main page 
 
 19. As a user, I can view posts ordered by most recently added so that I am up to date with the newest content 
 20. As a user, I can keep scrolling through the posts so that they are loaded automatically and I don't have to select the next page 
@@ -84,21 +84,21 @@ The key functionality aspects:
 23. As a user, I can view posts category tags, so that I choose posts to display that I’m particularly interested in
 24. As a user, I can search for posts with keywords so that I can find the posts I am interested in 
 
-#### User Profile Page 
+### User Profile Page 
 
 25. As a user, I can add my profile avatar so that other users can easily identify me 
 26. As a user, I can view user's avatars so that I can easily identify other users of the app 
 27. As a user, I can update the picture and description of my profile on the profile page so that other users view up to date info about me 
 28. As a user, I can change password to my account so that I can keep my profile secure 
 
-#### Other Users Profiles 
+### Other Users Profiles 
 
 29. As a user, I can view all the posts by a specific user so that I can see their latest activity 
 30. As a user, I can view other users’ profiles with their profile description, number of posts, followers and users followed so that I can learn more about them 
 31. As a user, I can follow and unfollow other users so that I can get specific users’ posts in my posts feed 
 32. As a user, I can see a list of the most followed profiles so that I can see which profiles are popular 
 
-#### General
+### General
 
 33. As a site owner I want my site to be fully responsive so that users can you use it on different devices
 34. As a site owner, I want users to come to a 404 error page so that they don't have to user the browser back button if they enter a URL that does not exist
@@ -523,6 +523,28 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 ### JSX
 
 ### Chrome Dev Tools Lighthouse 
+
+Lighthouse was used to test the performance, accessibility, best practice and SEO of the site. The validation was done for both desktop & mobile.  
+
+#### Desktop 
+
+<details><summary>Landing page</summary> 
+<img src="docs/validation/lighthouse-landing-desktop.png "> 
+</details>
+
+#### Mobile 
+
+<details><summary>Landing page</summary> 
+<img src="docs/validation/lighthouse-landing-mobile.png "> 
+</details> 
+
+### Wave
+The WAVE WebAIM web accessibility evaluation tool was used to test the websites accessibility.
+There were a few errors related to missing labels and contrast issues on buttons.
+
+<details><summary>Landing page</summary>
+<img src="docs/validation/wave-landing-page.png">
+</details>
 
 ## Testing
  

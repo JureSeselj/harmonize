@@ -123,7 +123,8 @@ The key functionality aspects:
 #### Typography
 
 * Google Fonts were implemented on the website. Prompt with sans-serif as fallback was used thoughout the site to ensure high legibility of the content.
-Prompt features a tall x-height to aid in readability of mixed-case and lower-case text.
+Prompt features a tall x-height to aid in readability of mixed-case and lower-case text. Carter One were used for h1 elements on landing page and also for 
+Sign Up / Log In forms.
 
 #### Imagery
 
@@ -400,6 +401,7 @@ Example of potential improvements to this project:
   - Allow user authentication with already existing accounts, e.g. Google, Facebook etc. 
 - Profile
   - Option to send a message to other user
+  - Allow users' to delete their profile
 - Posts
   - Add option for logged in users' to delete their post directly from posts page
   - Show most liked posts in the app - similar to ‘Top Users’ menu
@@ -1021,6 +1023,7 @@ Testing has been carried out on the following browsers:
 
 - The account deletion functionality: at first the plan was to allow users to deletion of their account together with their profile. After manual tests, this functionality was removed because of an internal server error after execution. The probable cause of this issue is related to JWT tokens stored in cookies data. During troubleshooting, it was discovered that after clearing browsers cookies the server responded properly. The backend was inspected, and some changes were done to DRF signals, but the problem was still present. The Code Institute Moments project does not have delete profile functionality, so in the end, the decision was made to remove it from this app version and implement it in the future releases if needed.
 - Cross browser compatibility: The app was tested on [Google Chrome](https://www.google.pl/chrome/) and [Mozilla Firefox](https://www.mozilla.org/pl/firefox/new/) and [Apple Safari](https://www.apple.com/safari/). On Chrome and Firefox, the app works well, Safari does not allow for login. The Code Institute's Moments project was tested to compare the products and the same problem is present. This issue can be fixed in the next release of the app.
+- WebSocket connection failed, error in connection establishment.
 
 ## Config
 

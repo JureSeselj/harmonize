@@ -37,10 +37,16 @@ The key functionality aspects:
     - [Validation](#validation)
     - [Testing](#testing)
       - [Manual testing of user stories](#manual-testing-of-user-stories)
+      - [Performing tests on various devices](#performing-tests-on-various-devices)
+      - [Browser compatibility](#browser-compatibility)
     - [Technologies Used](#technologies-used)
+    - [Bugs](#bugs)
+      - [Unsolved Bugs](#unsolved-bugs)
+    - [Config](#config)
       - [Languages](#languages)
       - [Libraries, frameworks and dependencies](#libraries-frameworks-and-dependencies)
       - [Tools & Programs](#tools--programs)
+    - [Credits](#credits)
 # User Experience - UX
 
 ## User Stories
@@ -522,6 +528,8 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 
 ### JSX
 
+The product's code was checked with the ESLint plugin during the product development process. No warnings are present for the production version.
+
 ### Chrome Dev Tools Lighthouse 
 
 Lighthouse was used to test the performance, accessibility, best practice and SEO of the site. The validation was done for both desktop & mobile.  
@@ -977,6 +985,65 @@ Within the post page click on the dropdown menu and 'bin' icon to delete the pos
 <img src="docs/testing/user-stories-testing/user-story-35-j.png">
 </details>
 
+### Performing tests on various devices
+
+The website was tested using Google Chrome Developer Tools Toggle Device Toolbar to simulate viewports of different devices.
+
+The website was tested on the following devices:
+- Samsung S8 (mobile screen)
+- MacBook Pro (laptop screen)
+- Samsung Galaxy Tab A (tablet screen)
+
+
+
+### Browser compatibility
+
+Testing has been carried out on the following browsers:
+- Googe Chrome, version 104.0.5112.79 (Official Build) (64-bit)
+- Firefox Browser, version 103.0.2 (64-bit)
+- Microsoft Edge, version 104.0.1293.54 (Official build) (64-bit)
+
+##### Back to [top](#table-of-contents)
+
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Dropdown menu three dots going off the container on smaller screens | Changed grid-template-columns: from ‘60px auto 200px’ to ‘60px auto 60px’ |
+| User was redirected to 404 page after signing up and logging in | Changed history.goBack(); to history.push("/") |
+| Lighthouse validation: Poor performance of the landing page | Resized (compressed) the landing image |
+| Lighthouse validation: Image not displayed with the correct image ratio | Resized the site logo image with to correct dimensions and ratio |
+| Console warning: Please use ```require("react-router-dom").NavLink``` instead of ```require("react-router-dom/NavLink")```. Support for the latter will be removed in the next major release. | Changed import { NavLink } from "react-router-dom" to import { NavLink } from "react-router-dom" |
+| On small screens, clicking on the hamburger menu and then on user avatar/ user name was not displaying the dropdown menu with ‘Profile’ & ‘Logout’ options | Added a class to the Avatar component, and a div in the ‘loggedInNavBar’ dropdown. In the ‘useClickOutsideToggle’ hook added a check to see if element is the one we don’t want to cause the collapse of navbar |
+
+### Unsolved Bugs
+
+- The account deletion functionality: at first the plan was to allow users to deletion of their account together with their profile. After manual tests, this functionality was removed because of an internal server error after execution. The probable cause of this issue is related to JWT tokens stored in cookies data. During troubleshooting, it was discovered that after clearing browsers cookies the server responded properly. The backend was inspected, and some changes were done to DRF signals, but the problem was still present. The Code Institute Moments project does not have delete profile functionality, so in the end, the decision was made to remove it from this app version and implement it in the future releases if needed.
+- Cross browser compatibility: The app was tested on [Google Chrome](https://www.google.pl/chrome/) and [Mozilla Firefox](https://www.mozilla.org/pl/firefox/new/) and [Apple Safari](https://www.apple.com/safari/). On Chrome and Firefox, the app works well, Safari does not allow for login. The Code Institute's Moments project was tested to compare the products and the same problem is present. This issue can be fixed in the next release of the app.
+
+## Config
+
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on Fork button in top right corner
+3. You will then have a copy of the repository in your own GitHub account.
+   
+### Making a Local Clone
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+4. Open commandline interface on your computer
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard 
+  ```
+  $ git clone https://github.com/JureSeselj/harmonize.git
+  ```
+7. Press Enter to create your local clone
+
+##### Back to [top](#table-of-contents)
+
+
 ## Technologies Used
 
 ### Languages
@@ -1019,3 +1086,32 @@ Within the post page click on the dropdown menu and 'bin' icon to delete the pos
   - [ESLint](https://eslint.org/) used to validate JSX code
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) used to validate performance, accessibility, best practice and SEO of the app
   - [Wave](https://wave.webaim.org/) - used to evaluate application accessibility
+
+## Credits
+
+### Content
+
+This project was inspired by the ['Moments'](https://github.com/Code-Institute-Solutions/moments) social media platform which was a final walk-through project with Code Institute. I have built my own styles and added extra functionality, such as filtering of posts based on their category. The Harmonize application can be expanded on and include the potential improvements mentioned in the 'Future features / improvements' section.
+
+* The images were taken from [Pixabay](https://pixabay.com/)
+* Site logo was created with [Favicon.io](https://favicon.io)
+
+### Information Sources / Resources
+
+* [Code Institute](https://codeinstitute.net/ie/)
+* [Free Code Camp](https://www.freecodecamp.org/learn)
+* [W3Schools - React](https://www.w3schools.com/react/default.asp)
+* [Stack Overflow](https://stackoverflow.com/)
+* [Scrimba - React](https://scrimba.com/playlist/p7P5Hd)
+* [React Bootstrap](https://react-bootstrap-v4.netlify.app/)
+
+[Back to Top](#table-of-contents)
+
+---
+
+**<div align='center'>Copyright @ Jure Seselj 2023</div>**
+<div align='center'>
+    <a href="https://www.linkedin.com/in/jure-seselj-062654192/" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+    </a>
+</div>
